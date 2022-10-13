@@ -36,7 +36,7 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'G-QPEKMGNYLZ');
     </script>
     <!--Start of Tawk.to Script-->
@@ -71,7 +71,7 @@
             -->
             <a class="toggle ml-auto" href="#"><i class="icofont-navigation-menu"></i></a>
          </div>
-         
+
       </div>
    <!-- sign up -->
    <section class="osahan-main-body">
@@ -128,6 +128,12 @@
                            <label for="exampleInputAddress1" class="required">Address</label>
                            <textarea placeholder="Enter Address" class="form-control" name="address" id="exampleInputAddress1" cols="30" rows="3"></textarea>
                         </div>
+
+                         <div class="form-group">
+                             <label for="" class="required">Date Of Birth</label>
+                             <input class="form-control" type="date" name="dob" id="exampleInputDOB">
+                         </div>
+
                         <div class="form-group">
                            <label for="exampleInputPassword1" class="required">Password<div id="pass_not_match" style="color:red; display:none;">Password and Confirm Password does not Match!</div></label>
                            <input placeholder="Enter Password" type="password" name="password" class="form-control" id="exampleInputPassword1">
@@ -301,6 +307,7 @@
             var phone3 = $("input[name='phone[full]']").val();
             var email = $("input[name='email']").val();
             var address = $("#exampleInputAddress1").val();
+            var dob = $("#exampleInputDOB").val();
             var password = $("input[name='password']").val();
             var con_password = $("input[name='con_password']").val();
 
@@ -312,6 +319,7 @@
                   phone: phone3,
                   email: email,
                   address: address,
+                   dob: dob,
                   password: password,
                   con_password: con_password
                },
