@@ -15,7 +15,7 @@ class SignupController extends Controller
 {
     public function signup(Request $request)
     {
-//        dd($request->all());
+//        dd($request->dob);
 
         $name=$request->input('name');
         $email=$request->input('email');
@@ -64,41 +64,36 @@ class SignupController extends Controller
                 $result1=DB::table('grocery_users')
                         ->where('mobile',$phone)
                         ->first();
-                    if($result1){
-                        $message = array('message' => 'Phone Number Already Exists!', 'title' => 'Signup');
+                if($result1){
+                    $message = array('message' => 'Phone Number Already Exists!', 'title' => 'Signup');
+                    return response()->json($message);
+                }
+                else{
+
+                    $data=array();
+                    $data['name']=$name;
+                    $data['mobile']=$phone;
+                    $data['email']=$email;
+                    $data['dob']=$dob;
+                    $data['password']=$cor_password;
+                    $data['address_primary']=$address;
+                    $data['division']=$city_name;
+                    $data['device_token']='xxxxxx';
+                    $data['credit']=0;
+                    $data['status']=0;
+                    $data['user_type']=0;
+                    $insert_user = DB::table('grocery_users')->insert($data);
+
+                    if($insert_user){
+                        $message = array('message' => 'User Added!', 'title' => 'Signup');
                         return response()->json($message);
                     }
                     else{
-
-                        $data=array();
-                        $data['name']=$name;
-                        $data['mobile']=$phone;
-                        $data['email']=$email;
-                        $data['dob']=$dob;
-                        $data['password']=$cor_password;
-                        $data['address_primary']=$address;
-                        $data['division']=$city_name;
-                        $data['device_token']='xxxxxx';
-                        $data['credit']=0;
-                        $data['status']=0;
-                        $data['user_type']=0;
-                        $insert_user = DB::table('grocery_users')->insert($data);
-
-                        if($insert_user){
-                            $message = array('message' => 'User Added!', 'title' => 'Signup');
-                            return response()->json($message);
-                        }
-                        else{
-                            $message = array('message' => 'Something Went Wrong!', 'title' => 'Signup');
-                            return response()->json($message);
-                        }
+                        $message = array('message' => 'Something Went Wrong!', 'title' => 'Signup');
+                        return response()->json($message);
                     }
-
-
-
+                }
             }
-
-
         }
         else{
             $message = array('message' => 'Password and Confirm Password does not Match!', 'title' => 'Signup');
