@@ -48,9 +48,9 @@
                                              <h6>&nbsp</h6>
                                              <h6 class="price m-0 text-success">{{$product->measuring_unit_new}}</h6>
                                              <div class="d-flex align-items-center">
-                                                 
+
                                                 <h6 class="price m-0 text-success">BDT {{$product->product_price}}</h6>
-                                                
+
                                         <!--<a data-toggle="collapse" href={{'#collapseExample'.$i}} role="button" aria-expanded="false" aria-controls={{'collapseExample'.$i}} class="btn btn-success btn-sm ml-auto">+</a>-->
                                         <div style="display:contents;" class="collapse qty_show" id={{'collapseExample'.$i}}>
                                             <div class="ml-auto">
@@ -61,8 +61,8 @@
                                                             <input type='button' value='+' class='qtyplus btn btn-success btn-sm' field={{'quantity'.$i}} />
                                                         </form>
                                                     </span> -->
-                                                    <button type='button' name={{$product->id}} class='btn btn-success btn-sm add_to_cart' ><i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Cart</button>
-                                                
+                                                    <button type='button' name="{{$product->id}}" class='btn btn-success btn-sm add_to_cart' ><i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Cart</button>
+
                                             </div>
                                         </div>
                                        </div>

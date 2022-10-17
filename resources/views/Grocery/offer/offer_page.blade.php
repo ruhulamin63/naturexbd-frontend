@@ -38,7 +38,7 @@
                               <div >
                                  @if($product->product_thumbnail)
                                     <?php if (file_exists("../../naturexbd-manage/public".$product->product_thumbnail)){ ?>
-                                       <img style="height: 150px;object-fit: contain;" src="{{asset('https://manage.naturexbd.com'.$product->product_thumbnail)}}" class="img-fluid item-img w-100 mb-3" alt="">  
+                                       <img style="height: 150px;object-fit: contain;" src="{{asset('https://manage.naturexbd.com'.$product->product_thumbnail)}}" class="img-fluid item-img w-100 mb-3" alt="">
                                     <?php } else{ ?>
                                        <img style="height: 150px;object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid item-img w-100 mb-3" alt="">
                                     <?php } ?>
@@ -51,7 +51,7 @@
                                  <p style="font-size: 14px; text-align: center"><del>{{$product->offer_old_price}} TK</del><b>  {{$product->product_price}} TK</b></p>
                               </div>
                               <div style="text-align: center">
-                                 <button type='button' name={{$product->id}} class='btn btn-success btn-sm add_to_cart'><i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Cart</button>
+                                 <button type='button' name="{{$product->id}}" class='btn btn-success btn-sm add_to_cart'><i class="fa fa-plus-circle" aria-hidden="true"></i> Add to Cart</button>
                                  @if(session()->has('client_id'))
                                  @endif
                               </div>
@@ -72,4 +72,3 @@
       </div>
    </section>
 @endsection
-            

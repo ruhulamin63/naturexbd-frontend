@@ -5,35 +5,35 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <meta name="author" content="">
-      
+
       <!-- HTML Meta Tags -->
     <meta name="title" content="NatureX">
     <meta name="description" content="We aim to deliver fresh and organic products from nature to the people of the country. NatureX has started its journey as a sister concern of Khaidai Today Ltd.">
-    
+
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Naturex">
     <meta itemprop="description" content="We aim to deliver fresh and organic products from nature to the people of the country. NatureX has started its journey as a sister concern of Khaidai Today Ltd.">
     <meta itemprop="image" content="{{asset('img/meta_image.jpg')}}">
-    
+
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="http://naturexbd.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="NatureX">
     <meta property="og:description" content="We aim to deliver fresh and organic products from nature to the people of the country. NatureX has started its journey as a sister concern of Khaidai Today Ltd.">
     <meta property="og:image" content="{{asset('img/meta_image.jpg')}}">
-    
+
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NatureX">
     <meta name="twitter:description" content="We aim to deliver fresh and organic products from nature to the people of the country. NatureX has started its journey as a sister concern of Khaidai Today Ltd.">
     <meta name="twitter:image" content="{{asset('img/meta_image.jpg')}}">
-    
-    
-      
+
+
+
       <!-- Pencil Analytics -->
       <script data-host="https://analytics.penciltech.co" data-dnt="false" src="https://analytics.penciltech.co/js/script.js" id="ZwSg9rf6GA" async defer></script>
       <!-- Pencil Analytics -->
-      
+
       <link rel="icon" type="image/png" href="{{asset('img/favicon.png')}}">
       <title>{{$title}}</title>
       <!-- Slick Slider -->
@@ -86,15 +86,15 @@
                    height:100px;
                }
 
-               
+
                .product_custom_image{
                    height:200px;
                }
-               
+
                .modal-cus{
                    width: 100% !important;
                }
-               
+
                .modal-dialog-cus{
                    max-width: 100% !important;
                }
@@ -109,11 +109,11 @@
                .product_custom_image{
                    height:180px;
                }
-               
+
                .modal-cus{
                    width: 100% !important;
                }
-               
+
                .modal-dialog-cus{
                    max-width: 100% !important;
                }
@@ -127,15 +127,15 @@
                .product_custom_image{
                    height:250px;
                }
-               
+
                .modal-cus{
                    width: 100% !important;
                }
-               
+
                .modal-dialog-cus{
                    max-width: 100% !important;
                }
-               
+
            }
 
            @media only screen and (min-width: 768px){
@@ -143,15 +143,15 @@
                    height:350px;
                }
 
-               
+
                .product_custom_image{
                    height:300px;
                }
-               
+
                .modal-cus{
                    width: 400px !important;
                }
-               
+
                .modal-dialog-cus{
                    max-width: 400px !important;
                }
@@ -166,11 +166,11 @@
                .product_custom_image{
                    height:300px;
                }
-               
+
                .modal-cus{
                    width: 400px !important;
                }
-               
+
                .modal-dialog-cus{
                    max-width: 400px !important;
                }
@@ -188,7 +188,7 @@
             cursor: pointer;
             font-size: 1.3em;
          }
-       
+
           .required:after {
             content:" *";
             color: red;
@@ -201,7 +201,7 @@
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-            
+
               gtag('config', 'G-QPEKMGNYLZ');
         </script>
         <!--Start of Tawk.to Script-->
@@ -244,7 +244,7 @@
               </div>
                <table class="search_table" style="width: 90%;position: absolute;top: 50px;">
                    <tbody>
-    
+
                    </tbody>
                </table>
            </div>
@@ -422,6 +422,13 @@
                         @endforeach
                      </div>
                   </li>
+
+{{--                   start writing by ruhul--}}
+                   <li class="nav-item active">
+                       <a class="nav-link text-white pl-0" href="{{URL::to('/grocery_blog')}}">Blog <span class="sr-only">(current)</span></a>
+                   </li>
+{{--                   end writing by ruhul--}}
+
                   <!--<li class="nav-item active">-->
                   <!--   <a class="nav-link text-white pl-0" href="{{URL::to('/offer_Product')}}">Offer </a>-->
                   <!--</li>-->
@@ -523,7 +530,7 @@
                            <span class="input-group-append">
                            <button type="submit" class="btn btn-success"> Subscribe</button>
                            </span>
-                        </div> 
+                        </div>
                      </form>
                   </div>-->
                   <div class="col-md-6 text-md-right">
@@ -650,14 +657,14 @@
                     <br>
                 </div>
             </div>
-            
+
              <div class="col-lg-2 col-md-5 mb-30">
                 <div class="footer-widget pament-widget float-lg-right">
                     <h6 class="title"><b>Payment Partner</b></h6>
                     <div class="col-md-6 col-3" ><a href="#" target="_blank"><img class="" src="{{asset('img/bkash.png')}}" alt="" height="50"></a></div>
                     <br>
                     <div class="col-md-6 col-3" ><a href="#" target="_blank"><img class="" src="{{asset('img/nagad.png')}}" alt="" height="50"></a></div>
-                    
+
                 </div>
             </div>
         </div>
@@ -697,24 +704,24 @@
             </div>
             <!-- //container -->
          </section>
-          
+
       </footer>
       <?php
             $client_id = session('client_id');
             $guest_id = session('guest_id');
             if(!$client_id && !$guest_id){
-                   Session::put('guest_id',rand(1000,99999)); 
+                   Session::put('guest_id',rand(1000,99999));
                    $guest_id = session('guest_id');
             }
-            
+
           $cart_data=DB::table('grocery_temp_cart');
           if($client_id){
             $cart_data->where('client_id',$client_id);
           }else{
                $cart_data->where('guest_id',$guest_id);
           }
-          $cart_data = $cart_data->get();  
-          
+          $cart_data = $cart_data->get();
+
           $cart_item=count($cart_data);
           $total_price=0;
         //   dump(session('guest_id'));
@@ -755,7 +762,7 @@
                   @csrf
                   <div class="modal-body">
                       <div class="form-row">
-    
+
                           <img src="{{asset('error_bgWhite.gif')}}" style="width:150px; margin:auto;"/>
                       </div>
                       <div align="center">
@@ -766,7 +773,7 @@
           </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="emptyCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -774,7 +781,7 @@
                   @csrf
                   <div class="modal-body">
                       <div class="form-row">
-    
+
                           <img src="{{asset('cart_empty1.gif')}}" style="width:150px; margin:auto;"/>
                       </div>
                       <div align="center">
@@ -799,14 +806,14 @@
                           <p class="modal-title" id="exampleModalLabel" style="color: #414243; text-align: justify;">
                           <b>Naturex</b>has started its journey as a sister concern of Khaidai Today Ltd. NatureX is marketing the product by collecting pure fruits, nuts, vegetables, spices, mustard oil, honey from remote areas of Bangladesh and processing them in specific places and packaging them at the right time.
                           <br><br>
-                          <b>About Khaidai Today:</b> 
+                          <b>About Khaidai Today:</b>
                           <br><br>
-                            Khaidai Today has been masterminded under the Guidance of the CEO (Chief Executive Officer) of Khaidai Today Ltd. , Ar Aminul Islam Shagor. With the experience from StartUp Bangladesh, Parking Koi Inc. Ltd. and TOOLBOX. Khaidai Today has modeled itself to be a customer first company with 100% utilization of data analytics. Khaidai Today started its journey back in 2017 with the tagline DELIVERING HAPPINESS and served 50,000+ times of restaurant foods. Following the success of the restaurant food delivery service at Rangpur and Bogra we have started our grocery delivery service, so you can now order your daily needs essential groceries, vegetables, fish, meat, fruits, baby care items, chocolates,OTC medicine and restaurant food if available, through the app and website. At this moment we have 5 warehouses with 100+ delivery men actively working in Dhaka. Services provided by Khaidai Today are handled delivery service for the best of the best experience in town. 
+                            Khaidai Today has been masterminded under the Guidance of the CEO (Chief Executive Officer) of Khaidai Today Ltd. , Ar Aminul Islam Shagor. With the experience from StartUp Bangladesh, Parking Koi Inc. Ltd. and TOOLBOX. Khaidai Today has modeled itself to be a customer first company with 100% utilization of data analytics. Khaidai Today started its journey back in 2017 with the tagline DELIVERING HAPPINESS and served 50,000+ times of restaurant foods. Following the success of the restaurant food delivery service at Rangpur and Bogra we have started our grocery delivery service, so you can now order your daily needs essential groceries, vegetables, fish, meat, fruits, baby care items, chocolates,OTC medicine and restaurant food if available, through the app and website. At this moment we have 5 warehouses with 100+ delivery men actively working in Dhaka. Services provided by Khaidai Today are handled delivery service for the best of the best experience in town.
 
                           <br><br>
-                          If you have any queries please let us know in our mail, hotline or via app. 
+                          If you have any queries please let us know in our mail, hotline or via app.
                           <br>
-                            Mail: support@naturexbd.com 
+                            Mail: support@naturexbd.com
                             <br>
                             Hotline: 01791 865 233, 01791 865 234
                             <br>
@@ -834,7 +841,7 @@
                             <b>Order anytime we will deliver within a few hours.</b>
                             <br><br> At Naturex, you’re never a guest, You’re our family member. So, If you have any queries please let us know in our mail, hotline or via app.
                             <br><br><br>
-                            Mail: support@naturexbd.com 
+                            Mail: support@naturexbd.com
                             <br>
                             Hotline: 01791 865 233, 01791 865 234
                             <br>
@@ -859,86 +866,86 @@
                         <div align="center">
                             <p class="modal-title" id="exampleModalLabel" style="color: #414243; text-align: justify;">
                             <b>1. Terms of Use </b>
-                                <br><br> 
-                                1.1 Welcome to naturexbd.com by Khaidai Today Ltd. (“NatureX”) provides access to the naturexbd.com website or the mobile application/app or any other media ("Website") to you subject to the terms and conditions (“Terms”) set out on this page. By using the Website, you, a registered or guest user in terms of the eligibility criteria set out herein (“User”) agree to be bound by the Terms. Please read them carefully as your continued usage of the Website, you signify your agreement to be bound by these Terms. If you do not want to be bound by the Terms, you must not subscribe to or use the Website or our services. 
-                                <br><br> 
-                                1.2 By implicitly or expressly accepting these Terms, you also accept and agree to be bound by NatureX Policies (including but not limited to Privacy Policy as amended from time to time. 
-                                <br><br> 
-                                1.3 In these Terms, references to "you", "User" shall mean the end user/customer accessing the Website, its contents and using the Services offered through the Website. References to the “Website”, "NatureX", “naturexbd.com”, "we", "us" and "our" shall mean the Website and/or NatureX Limited. 
-                                <br><br> 
-                                1.4 The contents set out herein form an electronic record in terms of তথ্য ও যোগাযোগ প্রযুক্তি আইন, ২০০৬ (Information & Communication Technology Act, 2006) and rules there under as applicable and as amended from time to time. As such, this document does not require any physical or digital signatures and forms a valid and binding agreement between the Website and the User. 
-                                <br><br> 
-                                1.5 The Website is operated by NatureX Limited., a company incorporated under the laws of Bangladesh having its registered office at Arma Majeda Malik Tower, 3rd Floor, Merul Badda, Dhaka, Bangladesh. All references to the Website in these Terms shall deem to refer to the aforesaid entity in inclusion of the online portal. 
-                                <br><br> 
-                                1.6 This Website may also contain links to other websites, which are not operated by NatureX, and NatureX has no control over the linked sites and accepts no responsibility for them or for any loss or damage that may arise from your use of them. Your use of the linked sites will be subject to the terms of use and service contained within each such site. 
-                                <br><br> 
-                                1.7 We reserve the right to change these Terms at any time. Such changes will be effective when posted on the Website. By continuing to use the Website after we post any such changes, you accept the Terms as modified. 
-                                <br><br> 
-                                1.8 These Terms will continue to apply until terminated by either You or NatureX in accordance with the terms set out below: 
-                                <br><br> 
-                                1.9 The agreement with NatureX Can be terminated by (i) not accessing the Website; or (ii) closing Your Account, if such option has been made available to You. 
-                                <br><br> 
-                                1.10 Notwithstanding the foregoing, these provisions set out in these Terms which by their very naturex are meant to survive termination, shall survive the termination / expiry of this agreement. 
                                 <br><br>
-                                <b> 2. Eligibility </b>  
-                                <br><br> 
-                                2.1 Use of the Website is available only to such persons who can legally contract under the Contract Act, 1872. 
-                                <br><br> 
-                                2.2 If you are a minor i.e. under the age of 18 years, you shall not register as a user of naturexbd.com and shall not transact on or use the Website. As a minor if you wish to use or transact on a website, such use or transaction may be made by your legal guardian or parents on the Website. NatureX reserves the right to terminate your membership and / or refuse to provide you with access to the website if it is brought to NatureX’s notice or if it is discovered that you are under the age of 18 years. 
-                                <br><br> 
-                                2.3 By accepting the Terms or using or transacting on the Website, the User irrevocably declares and undertakes that he/she is of legal age i.e. 18 years or older and capable of entering into a binding contract and such usage shall be deemed to form a contract between the Website and such User to the extent permissible under applicable laws. 
-                                <br><br> 
-                                2.4 NatureX is delivering over 6 districts now. They are delivering goods inside Dhaka City, Rajshahi, Chattagram, Mymensingh, Khulna, Rangpur. Khaidai offers a very fast delivery charge and ensures the quality products. 
-                                <br><br> 
-                                <b>3. Communication</b> 
-                                 <br><br> 
-                                3.1 When you use naturexbd.com, or contact us via phone or email, you consent to receive communication from us. You authorize us to communicate with you by email, SMS, phone call or by posting notices on the website or by any other mode of communication. For contractual purposes, you consent to receive communications (including transactional, promotional and/or commercial messages), from us with respect to your use of the website and/or your order placed on the Website. Additionally any disclosures posted on the site, or sent to you by email fulfill the legal obligation of communication made in writing. 
-                                 <br><br> 
+                                1.1 Welcome to naturexbd.com by Khaidai Today Ltd. (“NatureX”) provides access to the naturexbd.com website or the mobile application/app or any other media ("Website") to you subject to the terms and conditions (“Terms”) set out on this page. By using the Website, you, a registered or guest user in terms of the eligibility criteria set out herein (“User”) agree to be bound by the Terms. Please read them carefully as your continued usage of the Website, you signify your agreement to be bound by these Terms. If you do not want to be bound by the Terms, you must not subscribe to or use the Website or our services.
+                                <br><br>
+                                1.2 By implicitly or expressly accepting these Terms, you also accept and agree to be bound by NatureX Policies (including but not limited to Privacy Policy as amended from time to time.
+                                <br><br>
+                                1.3 In these Terms, references to "you", "User" shall mean the end user/customer accessing the Website, its contents and using the Services offered through the Website. References to the “Website”, "NatureX", “naturexbd.com”, "we", "us" and "our" shall mean the Website and/or NatureX Limited.
+                                <br><br>
+                                1.4 The contents set out herein form an electronic record in terms of তথ্য ও যোগাযোগ প্রযুক্তি আইন, ২০০৬ (Information & Communication Technology Act, 2006) and rules there under as applicable and as amended from time to time. As such, this document does not require any physical or digital signatures and forms a valid and binding agreement between the Website and the User.
+                                <br><br>
+                                1.5 The Website is operated by NatureX Limited., a company incorporated under the laws of Bangladesh having its registered office at Arma Majeda Malik Tower, 3rd Floor, Merul Badda, Dhaka, Bangladesh. All references to the Website in these Terms shall deem to refer to the aforesaid entity in inclusion of the online portal.
+                                <br><br>
+                                1.6 This Website may also contain links to other websites, which are not operated by NatureX, and NatureX has no control over the linked sites and accepts no responsibility for them or for any loss or damage that may arise from your use of them. Your use of the linked sites will be subject to the terms of use and service contained within each such site.
+                                <br><br>
+                                1.7 We reserve the right to change these Terms at any time. Such changes will be effective when posted on the Website. By continuing to use the Website after we post any such changes, you accept the Terms as modified.
+                                <br><br>
+                                1.8 These Terms will continue to apply until terminated by either You or NatureX in accordance with the terms set out below:
+                                <br><br>
+                                1.9 The agreement with NatureX Can be terminated by (i) not accessing the Website; or (ii) closing Your Account, if such option has been made available to You.
+                                <br><br>
+                                1.10 Notwithstanding the foregoing, these provisions set out in these Terms which by their very naturex are meant to survive termination, shall survive the termination / expiry of this agreement.
+                                <br><br>
+                                <b> 2. Eligibility </b>
+                                <br><br>
+                                2.1 Use of the Website is available only to such persons who can legally contract under the Contract Act, 1872.
+                                <br><br>
+                                2.2 If you are a minor i.e. under the age of 18 years, you shall not register as a user of naturexbd.com and shall not transact on or use the Website. As a minor if you wish to use or transact on a website, such use or transaction may be made by your legal guardian or parents on the Website. NatureX reserves the right to terminate your membership and / or refuse to provide you with access to the website if it is brought to NatureX’s notice or if it is discovered that you are under the age of 18 years.
+                                <br><br>
+                                2.3 By accepting the Terms or using or transacting on the Website, the User irrevocably declares and undertakes that he/she is of legal age i.e. 18 years or older and capable of entering into a binding contract and such usage shall be deemed to form a contract between the Website and such User to the extent permissible under applicable laws.
+                                <br><br>
+                                2.4 NatureX is delivering over 6 districts now. They are delivering goods inside Dhaka City, Rajshahi, Chattagram, Mymensingh, Khulna, Rangpur. Khaidai offers a very fast delivery charge and ensures the quality products.
+                                <br><br>
+                                <b>3. Communication</b>
+                                 <br><br>
+                                3.1 When you use naturexbd.com, or contact us via phone or email, you consent to receive communication from us. You authorize us to communicate with you by email, SMS, phone call or by posting notices on the website or by any other mode of communication. For contractual purposes, you consent to receive communications (including transactional, promotional and/or commercial messages), from us with respect to your use of the website and/or your order placed on the Website. Additionally any disclosures posted on the site, or sent to you by email fulfill the legal obligation of communication made in writing.
+                                 <br><br>
                                 <b>4. Your Account and Responsibilities </b>
-                                 <br><br> 
-                                4.1 Any person may access the Website either by registering to the Website or using the Website as a guest. However, a guest user may not have access to all sections of the Website including certain benefits/promotional offers, which shall be reserved only for the purpose of registered Users, and which may change from time to time at the sole discretion of the Website. 
-                                 <br><br> 
-                                4.2 If you wish to register your account with the Website, you shall be required to create an account by registering with a valid Bangladeshi mobile number and/or with your Facebook account or your email address or by filling in the details prescribed in the Website registration form. You will then receive a password or one-time PIN with which you can login to the website to place orders. 
-                                 <br><br> 
-                                4.3 If you use the website, you will be responsible for maintaining the confidentiality of your username and password and you will be responsible for all activities that occur under your username and you will be under the obligation to restrict access to your computer or mobile phone to prevent unauthorised access to your account. You should inform us immediately if you have any reason to believe that your password has become known to anyone else, or if the password is being, or is likely to be, used in an unauthorised manner. You agree that if you provide any information that is untrue, inaccurate, not current or incomplete or we have reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, or not in accordance with this Terms of Use, we have the right to suspend or terminate your membership on the website. 
-                                 <br><br> 
-                                4.4 The Website may be inaccessible for such purposes as it may, at its sole discretion deem necessary, including but not limited to regular maintenance. However, under no circumstances will NatureX be held liable for any losses or claims arising out of such inaccessibility to the Users and the Users expressly waive any claims against NatureX In this regard 
-                                 <br><br> 
+                                 <br><br>
+                                4.1 Any person may access the Website either by registering to the Website or using the Website as a guest. However, a guest user may not have access to all sections of the Website including certain benefits/promotional offers, which shall be reserved only for the purpose of registered Users, and which may change from time to time at the sole discretion of the Website.
+                                 <br><br>
+                                4.2 If you wish to register your account with the Website, you shall be required to create an account by registering with a valid Bangladeshi mobile number and/or with your Facebook account or your email address or by filling in the details prescribed in the Website registration form. You will then receive a password or one-time PIN with which you can login to the website to place orders.
+                                 <br><br>
+                                4.3 If you use the website, you will be responsible for maintaining the confidentiality of your username and password and you will be responsible for all activities that occur under your username and you will be under the obligation to restrict access to your computer or mobile phone to prevent unauthorised access to your account. You should inform us immediately if you have any reason to believe that your password has become known to anyone else, or if the password is being, or is likely to be, used in an unauthorised manner. You agree that if you provide any information that is untrue, inaccurate, not current or incomplete or we have reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, or not in accordance with this Terms of Use, we have the right to suspend or terminate your membership on the website.
+                                 <br><br>
+                                4.4 The Website may be inaccessible for such purposes as it may, at its sole discretion deem necessary, including but not limited to regular maintenance. However, under no circumstances will NatureX be held liable for any losses or claims arising out of such inaccessibility to the Users and the Users expressly waive any claims against NatureX In this regard
+                                 <br><br>
                                 <b>5. Charges </b>
-                                 <br><br> 
-                                5.1 Membership on the website is free for users. NatureX does not charge any fee for browsing and buying on the website. NatureX Reserves the right to change its fee policy from time to time. In particular, NatureX may at its sole discretion introduce new services and modify some or all of the existing services offered on the website. In such an event, NatureX reserves the right to introduce fees for the new services offered or amend/introduce fees for existing services, as the case may be. Changes to the fee policy will be posted on the website and such changes will automatically become effective immediately after they are posted on the website. 
-                                 <br><br> 
+                                 <br><br>
+                                5.1 Membership on the website is free for users. NatureX does not charge any fee for browsing and buying on the website. NatureX Reserves the right to change its fee policy from time to time. In particular, NatureX may at its sole discretion introduce new services and modify some or all of the existing services offered on the website. In such an event, NatureX reserves the right to introduce fees for the new services offered or amend/introduce fees for existing services, as the case may be. Changes to the fee policy will be posted on the website and such changes will automatically become effective immediately after they are posted on the website.
+                                 <br><br>
                                 <b>6. Copyright </b>
-                                 <br><br> 
-                                6.1 The material (including the content, and any other content, software or services) contained on naturexbd.com are the property of NatureXLimited, its subsidiaries, affiliates and/or third party licensors. No material on this site may be copied, reproduced, republished, installed, posted, transmitted, stored or distributed without written permission from NatureX Limited. 
-                                 <br><br> 
-                                6.2 You may not use any “deep-link”, “page-scrape”, “robot”, “spider” or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the website or any content, or in any way reproduce or circumvent the navigational structure or presentation of the website or any content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the website. We reserve our right to bar any such activity. 
-                                 <br><br> 
+                                 <br><br>
+                                6.1 The material (including the content, and any other content, software or services) contained on naturexbd.com are the property of NatureXLimited, its subsidiaries, affiliates and/or third party licensors. No material on this site may be copied, reproduced, republished, installed, posted, transmitted, stored or distributed without written permission from NatureX Limited.
+                                 <br><br>
+                                6.2 You may not use any “deep-link”, “page-scrape”, “robot”, “spider” or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the website or any content, or in any way reproduce or circumvent the navigational structure or presentation of the website or any content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the website. We reserve our right to bar any such activity.
+                                 <br><br>
                                 <b>7. Cookies </b>
-                                 <br><br> 
-                                7.1 This site uses cookies, which means that you must have cookies enabled on your computer in order for all functionality on this site to work properly. A cookie is a small data file that is written to your hard drive when you visit certain Websites. Cookie files contain certain information, such as a random number user ID that the site assigns to a visitor to track the pages visited. A cookie cannot read data off your hard disk or read cookie files created by other sites. Cookies, by themselves, cannot be used to find out the identity of any user. 
-                                 <br><br> 
+                                 <br><br>
+                                7.1 This site uses cookies, which means that you must have cookies enabled on your computer in order for all functionality on this site to work properly. A cookie is a small data file that is written to your hard drive when you visit certain Websites. Cookie files contain certain information, such as a random number user ID that the site assigns to a visitor to track the pages visited. A cookie cannot read data off your hard disk or read cookie files created by other sites. Cookies, by themselves, cannot be used to find out the identity of any user.
+                                 <br><br>
                                <b> 8. Promotional Activity </b>
-                                 <br><br> 
-                                8.1 To promote its services NatureX uses various advertisements and commercials which are truthful and are not deceptive or unfair to the best of our knowledge and belief. Every user is under the obligation to go through the relevant information contained in the Website before using the service and it will be assumed that each user is aware of every information provided in the Website. Images of products in the Website are for and by reference only and actual products may vary from the corresponding image exhibited. The Website disclaims any liabilities arising out of any discrepancies to this end to the fullest extent permitted by law. 
-                                 <br><br> 
+                                 <br><br>
+                                8.1 To promote its services NatureX uses various advertisements and commercials which are truthful and are not deceptive or unfair to the best of our knowledge and belief. Every user is under the obligation to go through the relevant information contained in the Website before using the service and it will be assumed that each user is aware of every information provided in the Website. Images of products in the Website are for and by reference only and actual products may vary from the corresponding image exhibited. The Website disclaims any liabilities arising out of any discrepancies to this end to the fullest extent permitted by law.
+                                 <br><br>
                                 <b>9. The Contract </b>
-                                 <br><br> 
-                                9.1 Your order is an offer to us to buy the product(s) in your order. When you place an order to purchase a product from us, you will receive an e-mail and/or SMS to your mobile phone number confirming receipt of your order and/or containing the details of your order (the "Order Confirmation E-mail and/or SMS"). The Order Confirmation E-mail and/or SMS is acknowledgement that we have received your order, but does not confirm acceptance of your offer to buy the product(s) ordered; that when we send the Order Confirmation Email and/or SMS a contract called an “agreement to sell” is concluded in accordance with Section 4(3) of the Sale of Goods Act, 1930 i.e. the transfer of the property in the goods is to take place at a future time when the product(s) is/are delivered to your designated address. We only accept your offer, and the above “agreement to sell” becomes a contract of sale for product(s) ordered by you in accordance with Section 4(4) of the Sale of Goods Act, 1930, when the product(s) is/are delivered to your designated address and at that time the property in the goods is transferred from us to you. 
-                                 <br><br> 
-                                9.2 You can cancel your order for a product at no cost any time before the goods are delivered to you. 
-                                 <br><br> 
-                                9.3 Please note that we sell products only in quantities which correspond to the typical needs of an average household. This applies both to the number of products ordered within a single order and the placing of several orders for the same product where the individual orders comprise a quantity typical for a normal household. 
-                                 <br><br> 
+                                 <br><br>
+                                9.1 Your order is an offer to us to buy the product(s) in your order. When you place an order to purchase a product from us, you will receive an e-mail and/or SMS to your mobile phone number confirming receipt of your order and/or containing the details of your order (the "Order Confirmation E-mail and/or SMS"). The Order Confirmation E-mail and/or SMS is acknowledgement that we have received your order, but does not confirm acceptance of your offer to buy the product(s) ordered; that when we send the Order Confirmation Email and/or SMS a contract called an “agreement to sell” is concluded in accordance with Section 4(3) of the Sale of Goods Act, 1930 i.e. the transfer of the property in the goods is to take place at a future time when the product(s) is/are delivered to your designated address. We only accept your offer, and the above “agreement to sell” becomes a contract of sale for product(s) ordered by you in accordance with Section 4(4) of the Sale of Goods Act, 1930, when the product(s) is/are delivered to your designated address and at that time the property in the goods is transferred from us to you.
+                                 <br><br>
+                                9.2 You can cancel your order for a product at no cost any time before the goods are delivered to you.
+                                 <br><br>
+                                9.3 Please note that we sell products only in quantities which correspond to the typical needs of an average household. This applies both to the number of products ordered within a single order and the placing of several orders for the same product where the individual orders comprise a quantity typical for a normal household.
+                                 <br><br>
                                 <b>10. Product Descriptions </b>
-                                 <br><br> 
-                                10.1 NatureX Attempts to be as accurate as possible. NatureX does not manufacture or produce any product by themselves. Therefore, NatureX does not warrant that product descriptions or other content of any NatureX product is accurate, complete, reliable, current, or error-free. If a product offered by NatureX itself is not as described, your sole remedy is to return it in unused condition. 
-                                 <br><br> 
+                                 <br><br>
+                                10.1 NatureX Attempts to be as accurate as possible. NatureX does not manufacture or produce any product by themselves. Therefore, NatureX does not warrant that product descriptions or other content of any NatureX product is accurate, complete, reliable, current, or error-free. If a product offered by NatureX itself is not as described, your sole remedy is to return it in unused condition.
+                                 <br><br>
                                 <b>11. Pricing </b>
-                                 <br><br> 
-                                11.1 Except where noted otherwise, the list price or suggested price displayed for products on NatureX represents the full retail price listed on the product itself, suggested by the manufacturer or supplier, or estimated in accordance with standard industry practice; or the estimated retail value for a comparably featured item offered elsewhere. The list price or suggested price is a comparative price estimate and may or may not represent the prevailing price in every area on any particular day. 
-                                 <br><br> 
-                                11.2 Despite our best efforts, a small number of the items in our catalog may be mispriced. If the MRP of an item sold by NatureX is higher than our stated price, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation. And if the stated price on the product is lower than NatureX, we will, either refund the amount or replace the product according to your preference, when acknowledged. 
+                                 <br><br>
+                                11.1 Except where noted otherwise, the list price or suggested price displayed for products on NatureX represents the full retail price listed on the product itself, suggested by the manufacturer or supplier, or estimated in accordance with standard industry practice; or the estimated retail value for a comparably featured item offered elsewhere. The list price or suggested price is a comparative price estimate and may or may not represent the prevailing price in every area on any particular day.
+                                 <br><br>
+                                11.2 Despite our best efforts, a small number of the items in our catalog may be mispriced. If the MRP of an item sold by NatureX is higher than our stated price, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation. And if the stated price on the product is lower than NatureX, we will, either refund the amount or replace the product according to your preference, when acknowledged.
                             </p>
                         </div>
                     </div>
@@ -1054,7 +1061,7 @@
             </div>
         </div>
     </div>
-        
+
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1084,7 +1091,7 @@
                            <button type="submit" class="btn btn-success btn-lg rounded btn-block" id="user_signin_btn">Sign in</button>
                     </form>
                 </div>
-        
+
                 </div>
             </div>
         </div>
@@ -1108,19 +1115,19 @@
                  timer = setTimeout(fn.bind(this, ...args), ms || 0)
              }
          }
-    
+
          function doesFileExist(urlToFile) {
              var xhr = new XMLHttpRequest();
              xhr.open('HEAD', urlToFile, false);
              xhr.send();
-    
+
              if (xhr.status == "404") {
                  return false;
              } else {
                  return true;
              }
          }
-    
+
      jQuery(".product_search").on("input", delay(function() {
         jQuery('.search_table tbody').empty();
         var keyword = jQuery(this).val();
@@ -1133,9 +1140,9 @@
                 "<img height='50px' src='{{asset('search.gif')}}'>"+
                 "</td>"+
                 "</tr>";
-    
+
             jQuery(".search_table tbody").append(tr_str1);
-    
+
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
@@ -1151,7 +1158,7 @@
                     jQuery('.search_table tbody').empty();
                     if (data.message=='Found') {
                         for(var i=0; i<data.product.length; i++){
-    
+
                             /*var result = doesFileExist("/public"+data.product[i].product_thumbnail);
                             if (result == true){*/
                                 var tr_str = "<tr id='search_row' style='width: 100%;border: 2px solid #f0f2f542;background-color: #607d8b87;'>"+
@@ -1181,8 +1188,8 @@
                                     "</td>"+
                                     "</tr>";
                             }*/
-    
-    
+
+
                             jQuery(".search_table tbody").append(tr_str);
                         }
                     } else {
@@ -1191,7 +1198,7 @@
                             "No Match Found"+
                             "</td>"+
                             "</tr>";
-    
+
                         jQuery(".search_table tbody").append(tr_str);
                     }
                 }
@@ -1200,17 +1207,17 @@
      }, 500));
      });
     </script>
-    
+
     <script>
               jQuery(document).click(function (e) {
                   jQuery('.search_table tbody').empty();
                   if (!jQuery(e.target).closest("#cart,.cart_remove").length) {
                       jQuery('#cart').modal('hide');
                   }
-    
+
               });
           </script>
-    
+
     <script>
                 function changeButton(payMethod) {
                     if (payMethod == "bKash") {
@@ -1219,22 +1226,22 @@
                         jQuery("#place_order").hide();
                         jQuery("#nagad_button").hide();
                         jQuery("#bKash_button").show();
-                    
+
                     } else if(payMethod == "nagad"){
                         jQuery("#place_order").hide();
                         jQuery("#bKash_button").hide();
                         jQuery("#nagad_button").show();
-    
+
                     } else {
                         /*jQuery("#place_order").html("Place Order");
                         jQuery("#pay_method_data").val("COD");*/
-    
+
                         jQuery("#bKash_button").hide();
                         jQuery("#nagad_button").hide();
                         jQuery("#place_order").show();
                     }
                 }
-                
+
                 function changeButtonCheckout(payMethod) {
                     if (payMethod == "bKash") {
                         /*jQuery("#place_order").html("Continue to Payment");
@@ -1242,33 +1249,33 @@
                         jQuery(".place_order").hide();
                         jQuery(".nagad_button").hide();
                         jQuery(".bKash_button").show();
-                    
+
                     } else if(payMethod == "nagad"){
                         jQuery(".place_order").hide();
                         jQuery(".bKash_button").hide();
                         jQuery(".nagad_button").show();
-    
+
                     } else {
                         /*jQuery("#place_order").html("Place Order");
                         jQuery("#pay_method_data").val("COD");*/
-    
+
                         jQuery(".bKash_button").hide();
                         jQuery(".nagad_button").hide();
                         jQuery(".place_order").show();
                     }
                 }
-                
+
                 $(document).on("click","#check-client",function() {
                     <?php if(!session('client_id')):?>
                     if(checkoutValidate()){
-                       showLoginPop(); 
+                       showLoginPop();
                     };
-                    
+
                     <?php endif?>
                 });
-                
-                
-                
+
+
+
                 function showLoginPop(){
                     var email = $("#checkout-form").find('input[name="email"]').val();
                     $('#loginModal').find('input[name="email"]').val(email).prop('disabled',true);
@@ -1277,37 +1284,37 @@
                         $('[data-toggle="tooltip"]').tooltip()
                       })
                 }
-            
-                
+
+
                  $(".toggle-password").click(function() {
-        
+
                     $(this).toggleClass("icofont-eye");
                     var input = $($(this).attr("toggle"));
-                    
-                    if ($(this).closest('div').find('input').attr("type") == "password") 
+
+                    if ($(this).closest('div').find('input').attr("type") == "password")
                     {
                         $(this).closest('div').find('input').attr("type", "text");
-                    } 
-                    else 
+                    }
+                    else
                     {
                         $(this).closest('div').find('input').attr("type", "password");
                     }
                 });
-                
+
                 $(document).ready(function() {
              $("#user_signin_btn").click(function(e) {
-    
+
                 $.ajaxSetup({
                    headers: {
                          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                    }
                 });
-    
+
                 e.preventDefault();
                 var email = $("input[name='email']").val();
                 var password = $("input[name='password']").val();
                 var formData = $("#checkout-form").serialize();
-    
+
                 $.ajax({
                    url: '{{url('/quick-sign')}}',
                    type: 'POST',
@@ -1330,12 +1337,12 @@
                             $('#wrong_user').hide();
                             $('#right_user').show();
                          }
-    
+
                    }
                 });
-    
+
              });
-             
+
              });
             </script>
     <script>
@@ -1346,21 +1353,21 @@
                       });
                   });
               });*/
-    
+
               function loaderStop() {
                   jQuery('.preloader').fadeOut('slow', function() {
                       jQuery(this).remove();
                   });
               }
-              
+
               setTimeout(function(){
                   jQuery('.preloader').fadeOut('slow', function() {
                       jQuery(this).remove();
                   });
               }, 2000);
-    
+
           </script>
-          
+
     <script>
               /*jQuery(document).ready(function() {
                   jQuery("#product_search").on("keyup", function() {
@@ -1372,65 +1379,65 @@
               });*/
 
           </script>
-          
+
     <script>
                // var accessToken='';
-    
+
                 jQuery(document).ready(function(){
-    
+
                     jQuery(".loginAlert").click(function(e){
                       e.preventDefault();
                       jQuery('#loginAlert').modal('show');
                       setTimeout(function() {jQuery('#loginAlert').modal('hide');}, 2000);
                   });
-    
+
                     jQuery(".emptyCart").click(function(e){
                       e.preventDefault();
                       jQuery('#emptyCart').modal('show');
                       setTimeout(function() {jQuery('#emptyCart').modal('hide');}, 2000);
                   });
-    
+
                     jQuery(".aboutModel").click(function(e){
                       e.preventDefault();
                       jQuery('#aboutModel').modal('show');
                       //setTimeout(function() {jQuery('#aboutModel').modal('hide');}, 2000);
                   });
-    
+
                     jQuery(".contactUsModel").click(function(e){
                       e.preventDefault();
                       jQuery('#contactUsModel').modal('show');
                       //setTimeout(function() {jQuery('#contactUsModel').modal('hide');}, 2000);
                   });
-    
+
                     jQuery(".termsConditionsModel").click(function(e){
                       e.preventDefault();
                       jQuery('#termsConditionsModel').modal('show');
                       //setTimeout(function() {jQuery('#termsConditionsModel').modal('hide');}, 2000);
                   });
-    
+
                     jQuery(".privacyPolicyModel").click(function(e){
                       e.preventDefault();
                       jQuery('#privacyPolicyModel').modal('show');
                       //setTimeout(function() {jQuery('#privacyPolicyModel').modal('hide');}, 2000);
                   });
-    
+
                     jQuery(".returnRefundCanModel").click(function(e){
                       e.preventDefault();
                       jQuery('#returnRefundCanModel').modal('show');
                       //setTimeout(function() {jQuery('#returnRefundCanModel').modal('hide');}, 2000);
                   });
-                  
+
                     jQuery(".add_to_cart").click(function(e){
-    
+
                       $.ajaxSetup({
                           headers: {
                               'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
                           }
                       });
-    
+
                       e.preventDefault();
                       const product_id = jQuery(this).attr('name');
-    
+
                       /*jQuery('#add_cart_modal').modal('show');
                       setTimeout(function() {jQuery('#add_cart_modal').modal('hide');}, 2000);*/
                       /*jQuery(".floating_cart").animate({
@@ -1439,41 +1446,41 @@
                       jQuery(".floating_cart").animate({
                           height: 'toggle'
                         });*/
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '+=10px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '+=10px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '-=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '-=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '+=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '+=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '-=10px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '-=10px'
                         },"fast");
-                        
-                        
-    
+
+
+
                       $.ajax({
                           url: '{{url('/grocery/product/add_to_cart')}}',
                           type: 'post',
@@ -1489,8 +1496,8 @@
                                   toastr.options.positionClass = 'toast-top-center';
                                   toastr.error(data.message, data.title);
                                   },500);*/
-                                  
-                                  
+
+
                                   let floating_cart_item = parseInt(jQuery(".floating_cart_item").attr('items'));
                                   floating_cart_item+=1;
                                   jQuery(".floating_cart_item").remove();
@@ -1519,7 +1526,7 @@
                                   jQuery(".cart_price_table").append(markup1);
                               }
                               else if(data.message=='Product found without img!'){
-    
+
                                   let floating_cart_item = parseInt(jQuery(".floating_cart_item").attr('items'));
                                   floating_cart_item+=1;
                                   jQuery(".floating_cart_item").remove();
@@ -1549,9 +1556,9 @@
                                   document.getElementsByName(data.product_id1)[0].setAttribute('price',data.total_price);
                                   jQuery('input[name='+data.product_id1+"quantity"+']').val(data.quantity);
                                   if(data.quantity>1){
-                                    jQuery('input[field='+data.product_id1+"quantity"+']').attr('style','pointer-events: inherit');  
+                                    jQuery('input[field='+data.product_id1+"quantity"+']').attr('style','pointer-events: inherit');
                                   }
-                                  
+
                                   var total_price_int = parseInt(jQuery(".cart_total").attr('name'));
                                   jQuery(".cart_total").remove();
                                   total_price_int+=parseInt(data.price);
@@ -1561,62 +1568,62 @@
                               else{
                                   window.location = "{{ URL::to('/') }}";
                               }
-    
+
                               jQuery(".proceed_to_checkout").remove();
                               const checkout_btn = "<button style='border-radius: unset !important;' formaction='{{URL::to('/checkout')}}' class='xxx1 btn btn-success btn-lg rounded btn-block proceed_to_checkout' ><i class='far fa-credit-card'></i> Proceed to Checkout</button>";
                               jQuery(".checkout_btn_holder").append(checkout_btn);
-    
+
                           }
                       });
                   });
-                  
+
                     jQuery(".add_to_cart_details").click(function(e){
-    
+
                       $.ajaxSetup({
                           headers: {
                               'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
                           }
                       });
-    
+
                       e.preventDefault();
                       const product_id = jQuery(this).attr('name');
                       const quantity_details = jQuery(".quantity_details").val();
-    
+
                       /*jQuery('#add_cart_modal').modal('show');
                       setTimeout(function() {jQuery('#add_cart_modal').modal('hide');}, 2000);*/
-    
+
                         jQuery(".floating_cart").animate({
                             right: '+=10px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '+=10px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '-=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '-=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '+=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '+=20px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart").animate({
                             right: '-=10px'
                         },"fast");
-                        
+
                         jQuery(".floating_cart1").animate({
                             right: '-=10px'
-                        },"fast");    
-    
+                        },"fast");
+
                       $.ajax({
                           url: '{{url('/grocery/product/add_to_cart_details')}}',
                           type: 'post',
@@ -1633,7 +1640,7 @@
                                   toastr.options.positionClass = 'toast-top-center';
                                   toastr.error(data.message, data.title);
                                   },500);*/
-    
+
                                   let floating_cart_item = parseInt(jQuery(".floating_cart_item").attr('items'));
                                   floating_cart_item+=1;
                                   jQuery(".floating_cart_item").remove();
@@ -1652,25 +1659,25 @@
                                       "<input type='button' value='+' name='"+data.price1+"' class='qtyplus btn btn-success btn-sm' field='" + data.product_id1 + "quantity' />" +
                                       "</form></span></td></tr>";
                                   jQuery("#cart_table").append(markup);
-                                  
-                                  
+
+
                                   document.getElementsByName(data.product_id1)[0].setAttribute('price',data.price);
                                   var total_price_int = parseInt(jQuery(".cart_total").attr('name'));
                                   jQuery(".cart_total").remove();
                                   total_price_int+=parseInt(data.price);
-                                  
+
                                      if(total_price_int>0){
                                       jQuery(".proceed_to_checkout").remove();
                                       const checkout_btn = "<button style='border-radius: unset !important;' formaction='{{url('/checkout?')}}' class='xxx7 btn btn-success btn-lg rounded btn-block proceed_to_checkout' ><i class='far fa-credit-card' onclick=''></i> Proceed to Checkout</button>";
                                       jQuery(".checkout_btn_holder").append(checkout_btn);
                                   }
-                                  
+
                                   const markup1 = "<span class='ml-auto cart_total' name='"+total_price_int+"BDT' href='#'>"+total_price_int+"BDT</span>";
                                   jQuery(".cart_price_table").append(markup1);
-                                
+
                               }
                               else if(data.message=='Product found without img!'){
-    
+
                                   let floating_cart_item = parseInt(jQuery(".floating_cart_item").attr('items'));
                                   floating_cart_item+=1;
                                   jQuery(".floating_cart_item").remove();
@@ -1700,7 +1707,7 @@
                                   document.getElementsByName(data.product_id1)[0].setAttribute('price',data.total_price);
                                   jQuery('input[name='+data.product_id1+"quantity"+']').val(data.quantity);
                                   if(data.quantity>1){
-                                    jQuery('input[field='+data.product_id1+"quantity"+']').attr('style','pointer-events: inherit');  
+                                    jQuery('input[field='+data.product_id1+"quantity"+']').attr('style','pointer-events: inherit');
                                   }
                                   var total_price_int = parseInt(jQuery(".cart_total").attr('name'));
                                   jQuery(".cart_total").remove();
@@ -1711,42 +1718,42 @@
                               else{
                                   window.location = "{{ URL::to('/') }}";
                               }
-    
+
                           }
                       });
                   });
-    
+
                     jQuery('body').on('click', '.qtyplus', function(e) {
                       $.ajaxSetup({
                           headers: {
                               'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
                           }
                       });
-                    
-                      
-    
+
+
+
                       e.preventDefault();
                       const product_price = jQuery(this).attr('name');
                       var product_id = parseInt(jQuery(this).attr('field'));
                       var field_name = jQuery(this).attr('field');
-                      
+
                       jQuery('[field="'+field_name+'"]').attr('style','pointer-events: inherit');
-    
+
                       let product_price1=parseInt(document.getElementsByName(product_id)[0].getAttribute('price'));
                       if(product_price1){
-    
+
                       }else{
                           product_price1=parseInt(jQuery("#"+product_id+"anchor").attr('price'));
                       }
                       product_price1+=parseInt(product_price);
                       document.getElementsByName(product_id)[0].setAttribute('price',product_price1);
-    
+
                       var total_price_int = parseInt(jQuery(".cart_total").attr('name'));
                       jQuery(".cart_total").remove();
                       total_price_int+=parseInt(product_price);
                       const markup3 = "<span class='ml-auto cart_total' name='"+total_price_int+"BDT' href='#'>"+total_price_int+"BDT</span>";
                       jQuery(".cart_price_table").append(markup3);
-    
+
                       $.ajax({
                           url: '{{url('/grocery/product/add_to_cart_plus')}}',
                           type: 'post',
@@ -1754,13 +1761,13 @@
                               product_id: product_id
                           },
                           success: function(data) {
-    
+
                           }
                       });
                   });
-    
+
                     jQuery('body').on('click', '.qtyminus', function(e) {
-                        
+
                       $.ajaxSetup({
                           headers: {
                               'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
@@ -1773,28 +1780,28 @@
                       }else{
                           jQuery(this).attr('style','pointer-events: inherit');
                       }
-    
+
                       if(currentVal>0){
                           e.preventDefault();
                           const product_price = jQuery(this).attr('name');
                           var product_id = parseInt(jQuery(this).attr('field'));
-    
+
                           let product_price1=parseInt(document.getElementsByName(product_id)[0].getAttribute('price'));
                           if(product_price1){
-    
+
                           }else{
                               product_price1=parseInt(jQuery("#"+product_id+"anchor").attr('price'));
                           }
-    
+
                           product_price1-=parseInt(product_price);
                           document.getElementsByName(product_id)[0].setAttribute('price',product_price1);
-    
+
                           var total_price_int = parseInt(jQuery(".cart_total").attr('name'));
                           jQuery(".cart_total").remove();
                           total_price_int-=parseInt(product_price);
                           const markup3 = "<span class='ml-auto cart_total' name='"+total_price_int+"BDT' href='#'>"+total_price_int+"BDT</span>";
                           jQuery(".cart_price_table").append(markup3);
-    
+
                           $.ajax({
                               url: '{{url('/grocery/product/add_to_cart_minus')}}',
                               type: 'post',
@@ -1802,14 +1809,14 @@
                                   product_id: product_id
                               },
                               success: function(data) {
-    
+
                               }
                           });
                       }
-    
-    
+
+
                   });
-    
+
                     jQuery('body').on('click', '.details_plus', function(e){
                       e.preventDefault();
                       // Get the field name
@@ -1825,7 +1832,7 @@
                           jQuery('input[name='+fieldName+']').val(1);
                       }
                   });
-    
+
                     jQuery('body').on('click', '.details_minus', function(e){
                       e.preventDefault();
                       // Get the field name
@@ -1841,7 +1848,7 @@
                           jQuery('input[name='+fieldName+']').val(1);
                       }
                   });
-    
+
                     jQuery('body').on('click', '.cart_remove', function(e) {
                       $.ajaxSetup({
                           headers: {
@@ -1857,11 +1864,11 @@
                       var total_price_int = parseInt(jQuery(".cart_total").attr('name'));
                       var total_price_product = parseInt(document.getElementsByName(product_id)[0].getAttribute('price'));
                       if(total_price_product){
-    
+
                       }else{
                           total_price_product=parseInt(jQuery(this).attr('price'));
                       }
-    
+
                       jQuery("."+product_id+"row").remove();
                       total_price_int-=total_price_product;
                       jQuery(".cart_total").remove();
@@ -1872,7 +1879,7 @@
                           const checkout_btn = "<button style='border-radius: unset !important;' formaction='#' class='xxx2 btn btn-success btn-lg rounded btn-block emptyCart proceed_to_checkout' ><i class='far fa-credit-card' onclick=''></i> Proceed to Checkout</button>";
                           jQuery(".checkout_btn_holder").append(checkout_btn);
                       }
-    
+
                       $.ajax({
                           url: '{{url('/grocery/product/remove_cart')}}',
                           type: 'post',
@@ -1880,24 +1887,24 @@
                               product_id: product_id
                           },
                           success: function(data) {
-    
+
                           }
                       });
-    
+
                   });
-    
+
                     if(window.location.href=="{{url('/checkout?')}}"){
-                      
+
                     jQuery('.floating_cart').hide();
                     jQuery('.floating_cart1').hide();
-                  
-                   
+
+
                 }
-                  
+
                 });
-    
+
           </script>
-    
+
 
    </body>
 </html>

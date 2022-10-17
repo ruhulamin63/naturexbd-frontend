@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
-use DB;
 use App\Http\Requests;
 use Session;
 
@@ -72,6 +72,32 @@ class ProductController extends Controller
 
     }
 
+//    start writing by Ruhul
+    public function grocery_blog_post(){
+        $ip = $this->getIp();
+        $locate = \Location::get($ip);
+        if($locate){
+            $cur_location=$locate->cityName.', '.$locate->countryName;
+            $city_info=DB::table('grocery_city')->where('city_name',$locate->cityName)->where('status',"Active")->first();
+            if($city_info){
+                $cityID=$city_info->id;
+            }
+            else{
+
+                $cityID=1;
+            }
+        }
+        else{
+            $cur_location="Location Unknown";
+            $cityID=1;
+        }
+
+        $title="Blog -Naturex";
+
+        return view('grocery.layouts.grocery_blog_post', compact('title','cur_location'));
+    }
+
+
     public function grocery_add_to_cart(Request $request)
     {
         $ip = $this->getIp();
@@ -95,36 +121,36 @@ class ProductController extends Controller
         $client_id=$request->session()->get('client_id');
         $guest_id=$request->session()->get('guest_id');
         if(!$client_id && !$guest_id){
-               Session::put('guest_id',rand(1000,99999)); 
+               Session::put('guest_id',rand(1000,99999));
                $guest_id = $request->session()->get('guest_id');
         }
-        
-        
-    
+
+
+
 
         $product_id=$request->input('product_id');
 
         $product_info=DB::table('grocery_products')->where('cityID',$cityID)->where('id',$product_id)->where('status',"Active")->first();
-        
+
         $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where(function($q) use($client_id,$guest_id) {
             if($client_id){
                 $q->where('client_id',$client_id);
             }else{
                 $q->where('guest_id',$guest_id);
             }
-            
+
         })->first();
 
         // $cart_info=DB::table('grocery_temp_cart')->where('client_id',$client_id)->where('product_id',$product_id)->first();
-        
+
         $cart_info1=DB::table('grocery_temp_cart')->where(function($q) use($client_id,$guest_id) {
             if($client_id){
                 $q->where('client_id',$client_id);
             }else{
-               $q->where('guest_id',$guest_id);     
+               $q->where('guest_id',$guest_id);
             }
-            
-            
+
+
         })->get();
 
         if($cart_info){
@@ -198,14 +224,14 @@ class ProductController extends Controller
 
         $client_id=$request->session()->get('client_id');
         $guest_id=$request->session()->get('guest_id');
-    
+
 
         $product_id=$request->input('product_id');
 
         $quantity_details=$request->input('quantity_details');
 
         $product_info=DB::table('grocery_products')->where('cityID',$cityID)->where('id',$product_id)->where('status',"Active")->first();
-        
+
         // $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where(function($q) use($client_id,$guest_id) {
         //     $q->where('client_id',$client_id)->orwhere('guest_id',$guest_id);
         // })->first();
@@ -217,19 +243,19 @@ class ProductController extends Controller
               }else{
                 $cart_info->where('guest_id',$guest_id);
               }
-            $cart_info = $cart_info->first();  
-         
+            $cart_info = $cart_info->first();
+
             //$cart_info=DB::table('grocery_temp_cart')->where('client_id',$client_id)->where('product_id',$product_id)->first();
-        
+
             //$cart_info1=DB::table('grocery_temp_cart')->where('client_id',$client_id)->orwhere('guest_id',$guest_id)->get();
-            
+
             $cart_info1=DB::table('grocery_temp_cart');
               if($client_id){
                 $cart_info1->where('client_id',$client_id);
               }else{
                 $cart_info1->where('guest_id',$guest_id);
               }
-              $cart_info1 = $cart_info1->get(); 
+              $cart_info1 = $cart_info1->get();
         }else{
             $cart_info=(object)[];
             $cart_info1 = (object)[];
@@ -286,19 +312,19 @@ class ProductController extends Controller
     public function grocery_add_to_cart_plus(Request $request)
     {
         $client_id=$request->session()->get('client_id');
-        
+
         $guest_id=$request->session()->get('guest_id');
 
         $product_id=$request->input('product_id');
 
         // $cart_info=DB::table('grocery_temp_cart')->where('client_id',$client_id)->where('product_id',$product_id)->first();
         if($client_id){
-            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->first();; 
+            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->first();;
         }else{
-            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->first();; 
+            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->first();;
         }
-        
- 
+
+
 
         $new_quantity=$cart_info->quantity + 1;
         $data=array();
@@ -314,19 +340,19 @@ class ProductController extends Controller
 
     public function grocery_add_to_cart_minus(Request $request)
     {
-       
+
         $client_id=$request->session()->get('client_id');
-        
+
         $guest_id=$request->session()->get('guest_id');
 
         $product_id=$request->input('product_id');
 
         //$cart_info=DB::table('grocery_temp_cart')->where('client_id',$client_id)->where('product_id',$product_id)->first();
-        
+
         if($client_id){
-            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->first();; 
+            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->first();;
         }else{
-            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->first();; 
+            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->first();;
         }
 
         if($cart_info->quantity>1)
@@ -354,14 +380,14 @@ class ProductController extends Controller
         $guest_id=$request->session()->get('guest_id');
 
         $product_id=$request->input('product_id');
-        
+
         if($client_id){
-            $cart_delete=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->delete(); 
+            $cart_delete=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->delete();
         }else{
-            $cart_delete=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->delete(); 
+            $cart_delete=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->delete();
         }
 
- 
+
 
         $message = array('message' => 'cart deleted!', 'title' => 'Add to cart');
         return response()->json($message);
@@ -389,18 +415,18 @@ class ProductController extends Controller
 
         $client_id=$request->session()->get('client_id');
         $guest_id = $request->session()->get('guest_id');
-        
+
         $product_id= $id;
 
         $product_info=DB::table('grocery_products')->where('cityID',$cityID)->where('id',$product_id)->where('status',"Active")->first();
-        
-        
+
+
         if($client_id){
-            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->first();; 
+            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('client_id',$client_id)->first();;
         }else{
-            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->first();; 
+            $cart_info=DB::table('grocery_temp_cart')->where('product_id', $product_id)->where('guest_id',$guest_id)->first();;
         }
-    
+
 
         if($cart_info){
             $new_quantity=$cart_info->quantity + 1;
@@ -417,7 +443,7 @@ class ProductController extends Controller
             return response()->json($message);
         }
         else{
-            
+
             $data=array();
             $data['client_id']=$client_id;
             $data['guest_id']=$guest_id;

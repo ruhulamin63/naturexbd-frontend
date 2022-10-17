@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/','HomeController@homePageSelect');
 
 Route::group(['middleware'=>['checkGuest']],function(){
-    
+
 
 Route::get('/','HomeController@groceryIndex');
 
@@ -47,6 +48,10 @@ Route::get('/offer_Product','OfferController@offer_details');
 Route::get('/grocery_product_details/{id}','ProductController@grocery_product_details');
 
 Route::get('/grocery_product_category/{category}','ProductController@grocery_product_category');
+
+//start writing by Ruhul
+Route::get('/grocery_blog',[ProductController::class, 'grocery_blog_post']);
+//end writing by Ruh
 
 Route::post('/applyPromo','PromoController@applyPromo');
 
@@ -116,7 +121,7 @@ Route::group(['middleware'=>['customAuth']],function(){
 
     // Route::get('/checkout','CheckoutController@checkout');
     Route::get('/resCheckout','Restaurant\CheckoutController@checkout');
-    
+
     Route::get('/profile','ProfileController@profile');
     Route::post('/update_profile','ProfileController@update_profile');
     Route::post('/change_profile_pic','ProfileController@change_profile_pic');
@@ -124,7 +129,7 @@ Route::group(['middleware'=>['customAuth']],function(){
 
     // Route::post('/place_order','OrderController@place_order');
     Route::post('/resplace_order','Restaurant\OrderController@place_order');
-    
+
     Route::post('/changeDeliveryZon','CheckoutController@ChangeDeliveryZon');
 });
 

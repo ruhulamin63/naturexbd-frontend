@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Restaurant;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
-use DB;
 use App\Http\Requests;
 use Session;
 
@@ -49,7 +49,7 @@ class ProductController extends Controller
         $title="All Food | Restaurant | Naturex";
         $category_all=DB::table('restaurant_product_category')->where('status',1)->get();
         $products=DB::table('restaurant_products')->where('cityID',$cityID)->where('status',1)->orderBy('id','DESC')->paginate(40);
-        
+
         return view('restaurant.Product.seeAllResProducts',compact('title','category_all','products','cur_location'));
 
     }
@@ -143,7 +143,7 @@ class ProductController extends Controller
         $product_info=DB::table('restaurant_products')->where('cityID',$cityID)->where('id',$product_id)->where('status',1)->first();
 
         $cart_info=DB::table('restaurant_temp_cart')->where('client_id',$client_id)->where('product_id',$product_id)->first();
-        
+
         $cart_info1=DB::table('restaurant_temp_cart')->where('client_id',$client_id)->get();
 
         if($cart_info){
@@ -223,7 +223,7 @@ class ProductController extends Controller
         $product_info=DB::table('restaurant_products')->where('cityID',$cityID)->where('id',$product_id)->where('status',1)->first();
 
         $cart_info=DB::table('restaurant_temp_cart')->where('client_id',$client_id)->where('product_id',$product_id)->first();
-        
+
         $cart_info1=DB::table('restaurant_temp_cart')->where('client_id',$client_id)->get();
 
         if($cart_info){
