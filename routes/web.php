@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -50,7 +51,8 @@ Route::get('/grocery_product_details/{id}','ProductController@grocery_product_de
 Route::get('/grocery_product_category/{category}','ProductController@grocery_product_category');
 
 //start writing by Ruhul
-Route::get('/grocery_blog',[ProductController::class, 'grocery_blog_post']);
+Route::get('/blog',[BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/show/{id}',[BlogController::class, 'show'])->name('blog.show');
 //end writing by Ruh
 
 Route::post('/applyPromo','PromoController@applyPromo');

@@ -425,7 +425,7 @@
 
 {{--                   start writing by ruhul--}}
                    <li class="nav-item active">
-                       <a class="nav-link text-white pl-0" href="{{URL::to('/grocery_blog')}}">Blog <span class="sr-only">(current)</span></a>
+                       <a class="nav-link text-white pl-0" href="{{URL::to('/blog')}}">Blog <span class="sr-only">(current)</span></a>
                    </li>
 {{--                   end writing by ruhul--}}
 

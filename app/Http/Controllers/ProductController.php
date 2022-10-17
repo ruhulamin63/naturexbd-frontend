@@ -72,32 +72,6 @@ class ProductController extends Controller
 
     }
 
-//    start writing by Ruhul
-    public function grocery_blog_post(){
-        $ip = $this->getIp();
-        $locate = \Location::get($ip);
-        if($locate){
-            $cur_location=$locate->cityName.', '.$locate->countryName;
-            $city_info=DB::table('grocery_city')->where('city_name',$locate->cityName)->where('status',"Active")->first();
-            if($city_info){
-                $cityID=$city_info->id;
-            }
-            else{
-
-                $cityID=1;
-            }
-        }
-        else{
-            $cur_location="Location Unknown";
-            $cityID=1;
-        }
-
-        $title="Blog -Naturex";
-
-        return view('grocery.layouts.grocery_blog_post', compact('title','cur_location'));
-    }
-
-
     public function grocery_add_to_cart(Request $request)
     {
         $ip = $this->getIp();
