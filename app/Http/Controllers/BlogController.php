@@ -90,6 +90,7 @@ class BlogController extends Controller
         //show blog details
         $blogDetails = DB::table('blogs')->where('id', $blogId)->first();
 
+//        dd($blogDetails);
         //    start writing by Ruhul
         $ip = $this->getIp();
         $locate = \Location::get($ip);
@@ -112,7 +113,7 @@ class BlogController extends Controller
 
         //return view
         $title="Blog-Details-Naturex";
-        return view('grocery.blogs.blogDetails', compact('blogDetails', 'title', 'category_all', 'cur_location'));
+        return view('grocery.blogs.blogDetails', compact('blogDetails', 'title', 'category_all', 'cur_location', 'blogDetails'));
     }
 
     /**
