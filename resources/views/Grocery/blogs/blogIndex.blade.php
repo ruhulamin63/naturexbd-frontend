@@ -64,7 +64,7 @@
                                                 <a href="#"><h3>{{ $blog->title }}</h3></a>
                                                 <ul class="post-meta list-inline">
                                                     <li class="list-inline-item">
-                                                        <i class="fa fa-user-circle-o"></i> <a href="#">John Doe</a>
+                                                        <i class="fa fa-user-circle-o"></i> <a href="#">Naturex</a>
                                                     </li>
                                                     <li class="list-inline-item">
                                                         <i class="fa fa-calendar-o"></i> <a href="#">Created on {{ date('jS M Y', strtotime($blog->updated_at)) }}</a>
