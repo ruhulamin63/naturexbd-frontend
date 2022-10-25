@@ -113,7 +113,7 @@ class BlogController extends Controller
 
         //return view
         $title="Blog-Details-Naturex";
-        return view('grocery.blogs.blogDetails', compact('blogDetails', 'title', 'category_all', 'cur_location', 'blogDetails'));
+        return view('Grocery.blogs.blogDetails', compact('blogDetails', 'title', 'category_all', 'cur_location', 'blogDetails'));
     }
 
     /**
