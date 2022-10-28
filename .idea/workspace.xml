@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1503a969-7a96-4271-96f8-6a661b980fc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/blogs/blogDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/blogs/blogDetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/blogs/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/blogs/blogIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/change_password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/change_password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/checkout/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/checkout/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/deactivate_account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/deactivate_account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/faq.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/faq.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/forgot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/forgot.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/mail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/password_mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/password_mail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/success.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/fresh_vegan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/fresh_vegan.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/help_support.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/help_support.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/help_ticket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/help_ticket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/home/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/home/home2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/home/home2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/home/main_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/home/main_panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/cart_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/cart_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_made_for_you.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_made_for_you.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_may_like.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_may_like.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_promos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_promos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_recommended.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_recommended.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_specialOffer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_specialOffer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/mobile_sidenav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/mobile_sidenav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/my_address.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/my_address.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/my_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/my_order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/offer/offer_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/offer/offer_page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/order/guest_order_success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/order/guest_order_success.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/order/myorder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/order/myorder.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/order/myorder2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/order/myorder2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/picks_today.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/picks_today.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/privacy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/privacy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/listing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/product_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/seeAllProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/profile/my_account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/profile/my_account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/promo/promo_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/promo/promo_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/promo_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/promo_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/promos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/promos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/recommend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/recommend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/refund_payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/refund_payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/signin/signin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/signin/signin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/signup/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/signup/signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/special_offer/special_offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/special_offer/special_offer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/status_canceled.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/status_canceled.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/status_complete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/status_complete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/status_onprocess.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/status_onprocess.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/successful.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/successful.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/terms&amp;conditions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/terms&amp;conditions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/terms_conditions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/terms_conditions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/verification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/verification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/welcome.blade.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/code4mk/lara-nagad" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/geoip2/geoip2" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/shipu/php-aamarpay-payment" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/maxmind/web-service-common" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/maxmind-db/reader" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/stevebauman/location" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2G7DkCe4vajte4YUaSecLlTq8BZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git-nanutexbd\naturexbd-frontend\ftp-server-credential" />
+      <recent name="D:\git-nanutexbd\naturexbd-frontend\resources\views\Grocery\blogs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1503a969-7a96-4271-96f8-6a661b980fc8" name="Changes" comment="" />
+      <created>1665730869491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665730869491</updated>
+      <workItem from="1665730871960" duration="70000" />
+      <workItem from="1665730944598" duration="4001000" />
+      <workItem from="1665741795011" duration="5792000" />
+      <workItem from="1665753388261" duration="55000" />
+      <workItem from="1666029100440" duration="6022000" />
+      <workItem from="1666039618252" duration="4257000" />
+      <workItem from="1666044048960" duration="112000" />
+      <workItem from="1666421285846" duration="1076000" />
+      <workItem from="1666717783254" duration="1652000" />
+      <workItem from="1666934604778" duration="23000" />
+      <workItem from="1666934638569" duration="1409000" />
+      <workItem from="1666936935363" duration="376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
