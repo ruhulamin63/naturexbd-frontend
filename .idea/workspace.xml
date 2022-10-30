@@ -2,65 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1503a969-7a96-4271-96f8-6a661b980fc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/blogs/blogDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/blogs/blogDetails.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/blogs/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/blogs/blogIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/change_password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/change_password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/checkout/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/checkout/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/deactivate_account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/deactivate_account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/faq.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/faq.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/forgot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/forgot.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/mail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/password_mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/password_mail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/forgot/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/forgot/success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/fresh_vegan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/fresh_vegan.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/help_support.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/help_support.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/help_ticket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/help_ticket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/home/home2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/home/home2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/home/main_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/home/main_panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/cart_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/cart_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_made_for_you.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_made_for_you.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_may_like.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_may_like.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_promos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_promos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_recommended.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_recommended.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/grocery_specialOffer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/grocery_specialOffer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/layouts/mobile_sidenav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/layouts/mobile_sidenav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/my_address.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/my_address.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/my_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/my_order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/offer/offer_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/offer/offer_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/order/guest_order_success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/order/guest_order_success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/order/myorder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/order/myorder.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/order/myorder2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/order/myorder2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/picks_today.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/picks_today.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/privacy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/privacy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/listing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/product_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/product/seeAllProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/profile/my_account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/profile/my_account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/promo/promo_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/promo/promo_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/promo_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/promo_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/promos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/promos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/recommend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/recommend.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/refund_payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/refund_payment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/signin/signin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/signin/signin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/signup/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/signup/signup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/special_offer/special_offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/special_offer/special_offer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/status_canceled.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/status_canceled.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/status_complete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/status_complete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/status_onprocess.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/status_onprocess.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/successful.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/successful.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/terms&amp;conditions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/terms&amp;conditions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/terms_conditions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/terms_conditions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/verification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/verification.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Grocery/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +176,11 @@
       <workItem from="1666717783254" duration="1652000" />
       <workItem from="1666934604778" duration="23000" />
       <workItem from="1666934638569" duration="1409000" />
-      <workItem from="1666936935363" duration="376000" />
+      <workItem from="1666936935363" duration="1025000" />
+      <workItem from="1666968065215" duration="1484000" />
+      <workItem from="1667149889714" duration="1317000" />
+      <workItem from="1667152664114" duration="8000" />
+      <workItem from="1667153392752" duration="3107000" />
     </task>
     <servers />
   </component>

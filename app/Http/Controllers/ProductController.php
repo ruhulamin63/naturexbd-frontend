@@ -503,8 +503,12 @@ class ProductController extends Controller
 
         $title="Products | Naturex";
         $category_all=DB::table('grocery_category')->where('cityID',$cityID)->where('status',"Active")->get();
-        $products=DB::table('grocery_products')->where('cityID',$cityID)->where('status',"Active")->where(function($q) {$q->where('product_type',1)->orwhere('product_type',2);})->orderBy('id','DESC')->paginate(40);
-        return view('grocery.product.seeAllProduct',compact('title','category_all','products','cur_location'));
+//        $products=DB::table('grocery_products')->where('cityID',$cityID)->where('status',"Active")->where(function($q) {$q->where('product_type',1)->orwhere('product_type',2);})->orderBy('id','DESC')->paginate(40);
+
+        $products=DB::table('grocery_products')->where('cityID',1)->where('status',"Active")->orderBy('id','DESC')->paginate(40);
+        $productsMultiImage=DB::table('grocery_products_image_file')->where('product_id',1)->orderBy('id','DESC')->paginate(40);
+
+        return view('grocery.product.seeAllProduct',compact('title','category_all','products', 'productsMultiImage', 'cur_location'));
 
     }
 

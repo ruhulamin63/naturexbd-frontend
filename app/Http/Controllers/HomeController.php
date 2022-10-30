@@ -113,7 +113,7 @@ class HomeController extends Controller
 
         // toastr()->success('Data has been saved successfully!');
         //Toastr::success('Logged in!', 'Login', ["positionClass" => "toast-top-right"]);
-        return view('Grocery.home.home',compact('title','category_all','promo_all','feature_products','recommended_category','recommended_products1','recommended_products2','recommended_products3','special_offer_list','special_offer_is_active','cur_location','cityID','homepage_banners'));
+        return view('grocery.home.home',compact('title','category_all','promo_all','feature_products','recommended_category','recommended_products1','recommended_products2','recommended_products3','special_offer_list','special_offer_is_active','cur_location','cityID','homepage_banners'));
 
     }
 
