@@ -34,14 +34,9 @@
                                           <div class="member-plan position-absolute"><!--<span class="badge m-3 badge-danger">10%</span>--></div>
                                           <div class="p-3" style="height:100%;">
                                              <div style="height:80%;">
-
                                                  @foreach($productsMultiImage as $image)
                                                      @if($image->product_id == $product->id)
-                                                         <?php if (file_exists("https://naturexmanager.penciltech.xyz/naturexmanager/public/storage".$image->image_path)){ ?>
-                                                            <img style="object-fit: contain;" src="{{asset('https://naturexmanager.penciltech.xyz/naturexmanager/public/storage'.$image->image_path)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                                         <?php } else{ ?>
-                                                            <img style="object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                                         <?php } ?>
+                                                         <img src="{{ asset('http://127.0.0.1:9000/storage'.$image->image_path) }}" class="img-fluid product_custom_image item-img w-100 mb-3">
                                                      @else
                                                          <img style="object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                                                      @endif
