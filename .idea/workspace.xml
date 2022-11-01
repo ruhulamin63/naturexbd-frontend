@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1503a969-7a96-4271-96f8-6a661b980fc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/grocery/blogs/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/blogs/blogIndex.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +179,7 @@
       <workItem from="1667149889714" duration="1317000" />
       <workItem from="1667152664114" duration="8000" />
       <workItem from="1667153392752" duration="3107000" />
+      <workItem from="1667322049951" duration="4286000" />
     </task>
     <servers />
   </component>
