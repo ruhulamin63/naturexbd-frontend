@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1503a969-7a96-4271-96f8-6a661b980fc8" name="Changes" comment="">
+    <list default="true" id="02cedef9-f824-4e47-8fc8-8be3206fd762" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/grocery/blogs/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/blogs/blogIndex.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/grocery/product/seeAllProduct.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +157,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1503a969-7a96-4271-96f8-6a661b980fc8" name="Changes" comment="" />
+      <changelist id="02cedef9-f824-4e47-8fc8-8be3206fd762" name="Changes" comment="" />
       <created>1665730869491</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -180,6 +179,7 @@
       <workItem from="1667152664114" duration="8000" />
       <workItem from="1667153392752" duration="3107000" />
       <workItem from="1667322049951" duration="4286000" />
+      <workItem from="1667415016048" duration="4000" />
     </task>
     <servers />
   </component>

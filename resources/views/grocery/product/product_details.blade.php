@@ -22,15 +22,15 @@
                <div class="col-lg-8">
                   <div class="recommend-slider mb-3">
                      @if($product_info->product_thumbnail)
-                        <?php if (file_exists("../../naturexbd-manage/public".$product_info->product_thumbnail)){ ?>
+                        <?php if (file_exists("http://127.0.0.1:8000/storage".$product_info->product_thumbnail)){ ?>
                            <div class="osahan-slider-item" style="background-color:#fff;">
-                              <img src="{{asset('https://manage.naturexbd.com'.$product_info->product_thumbnail)}}" style="height:400px;box-shadow:none !important;object-fit:contain;" class="img-fluid mx-auto shadow-sm rounded" alt="Responsive image">
+                              <img src="{{asset('http://127.0.0.1:8000/storage'.$product_info->product_thumbnail)}}" style="height:400px;box-shadow:none !important;object-fit:contain;" class="img-fluid mx-auto shadow-sm rounded" alt="Responsive image">
                            </div>
                            <div class="osahan-slider-item" style="background-color:#fff;">
-                              <img src="{{asset('https://manage.naturexbd.com'.$product_info->product_thumbnail)}}" style="height:400px;box-shadow:none !important;object-fit:contain;" class="img-fluid mx-auto shadow-sm rounded" alt="Responsive image">
+                              <img src="{{asset('http://127.0.0.1:8000/storage'.$product_info->product_thumbnail)}}" style="height:400px;box-shadow:none !important;object-fit:contain;" class="img-fluid mx-auto shadow-sm rounded" alt="Responsive image">
                            </div>
                            <div class="osahan-slider-item" style="background-color:#fff;">
-                              <img src="{{asset('https://manage.naturexbd.com'.$product_info->product_thumbnail)}}" style="height:400px;box-shadow:none !important;object-fit:contain;" class="img-fluid mx-auto shadow-sm rounded" alt="Responsive image">
+                              <img src="{{asset('http://127.0.0.1:8000/storage'.$product_info->product_thumbnail)}}" style="height:400px;box-shadow:none !important;object-fit:contain;" class="img-fluid mx-auto shadow-sm rounded" alt="Responsive image">
                            </div>
                         <?php } else{ ?>
                            <div class="osahan-slider-item" style="background-color:#fff;">

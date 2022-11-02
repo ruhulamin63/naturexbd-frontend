@@ -34,18 +34,18 @@
                                           <div class="member-plan position-absolute"><!--<span class="badge m-3 badge-danger">10%</span>--></div>
                                           <div class="p-3" style="height:100%;">
                                              <div style="height:80%;">
-                                                 @foreach($productsMultiImage as $image)
-                                                     @if($image->product_id == $product->id)
-                                                         <img src="{{ asset('http://127.0.0.1:9000/storage'.$image->image_path) }}" class="img-fluid product_custom_image item-img w-100 mb-3">
+                                                 {{-- @foreach($productsMultiImage as $image) --}}
+                                                     @if($product->product_thumbnail)
+                                                         <img style="object-fit: contain;" src="{{ asset('http://127.0.0.1:8000/storage'.$product->product_thumbnail) }}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="...">
                                                      @else
                                                          <img style="object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                                                      @endif
-                                                 @endforeach
+                                                 {{-- @endforeach --}}
 
                                                 <h6>{{$product->product_name}}</h6>
                                              </div>
                                              <h6>&nbsp</h6>
-                                             <h6 class="price m-0 text-success">{{$product->measuring_unit_new}}</h6>
+                                             <h6 class="price m-0 text-success">{{$product->measuring_unit}}</h6>
                                             <div class="d-flex align-items-center">
                                             <h6 class="price m-0 text-success">BDT {{$product->product_price}}</h6>
                                                 <div style="display:contents;" class="collapse qty_show" id={{'collapseExample'.$i}}>
