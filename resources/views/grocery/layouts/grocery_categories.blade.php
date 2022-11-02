@@ -14,8 +14,8 @@
                <div class="my-2 px-2 py-3 c-it bg-white shadow-sm rounded text-center ">
                   <a href="{{ URL::to('/grocery_product_category/'.$category->category) }}">
                         @if($category->thumbnail)
-                           <?php if (file_exists("../../naturexbd-manage/public".$category->thumbnail)){ ?>
-                              <img src="{{asset('https://manage.naturexbd.com'.$category->thumbnail)}}" class="img-fluid px-2 mx-auto">
+                           <?php if (file_exists("http://127.0.0.1:8000".$category->thumbnail)){ ?>
+                              <img src="{{asset('http://127.0.0.1:8000'.$category->thumbnail)}}" class="img-fluid px-2 mx-auto">
                            <?php } else{ ?>
                               <img src="{{asset('/B0eS.gif')}}" class="img-fluid px-2 mx-auto">
                            <?php } ?>

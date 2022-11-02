@@ -41,8 +41,8 @@
                                      </td>
                                      <td style='width: 30%; text-align: center;'>
                                         @if($info->product_img)
-                                        <?php if (file_exists("../../naturexbd-manage/public" . $info->product_img)) { ?>
-                                           <img height='80px' src="{{asset('https://manage.naturexbd.com'.$info->product_img)}}">
+                                        <?php if (file_exists("http://127.0.0.1:8000/storage" . $info->product_img)) { ?>
+                                           <img height='80px' src="{{asset('http://127.0.0.1:8000/storage'.$info->product_img)}}">
                                         <?php } else { ?>
                                            <img height='80px' src='{{asset('/B0eS.gif')}}'>
                                         <?php } ?>
