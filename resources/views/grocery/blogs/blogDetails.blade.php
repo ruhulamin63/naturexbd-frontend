@@ -33,7 +33,7 @@
                                             <h2>{{ $blogDetails->title }}</h2>
                                             <h5>Created on {{ date('jS M Y', strtotime($blogDetails->updated_at)) }}</h5>
                                             <div class="fakeimg" style="height:200px;">
-                                                <img src="{{asset('storage/'.$blogDetails->image_path)}}" alt="" class="img-fluid mb20" style="height: 150px; width: 300px">
+                                                <img src="{{asset('http://127.0.0.1:8000/storage/'.$blogDetails->image_path)}}" alt="" class="img-fluid mb20" style="height: 150px; width: 300px">
                                             </div>
 
                                             <br>
@@ -44,7 +44,7 @@
                                             <br>
 
                                             <div class="embed-responsive embed-responsive-21by9 mb20">
-                                                <iframe src="{{asset('storage/'.$blogDetails->video_path)}}" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                                                <iframe src="{{asset('http://127.0.0.1:8000/storage/'.$blogDetails->video_path)}}" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
                                             </div>
                                         </div>
                                     </div>

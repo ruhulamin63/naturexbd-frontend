@@ -27,12 +27,18 @@
                                     </a>
                                 </td>
                                 <td style='width: 30%; text-align: center;'>
-                                    @if($cart->product_img)
+                                    {{-- @if($cart->product_img)
                                         <?php if (file_exists("../../naturexbd-manage/public".$cart->product_img)){ ?>
-                                            <img height='80px' src="{{asset('https://manage.naturexbd.com'.$cart->product_img)}}" >
+                                            <img height='80px' src="{{asset('http://127.0.0.1:8000'.$cart->product_img)}}" >
                                         <?php } else{ ?>
                                             <img height='80px' src='{{asset('/B0eS.gif')}}' >
                                         <?php } ?>
+                                    @else
+                                        <img height='80px' src='{{asset('/B0eS.gif')}}' >
+                                    @endif --}}
+
+                                    @if($cart->product_img)
+                                        <img height='80px' src="{{asset('http://127.0.0.1:8000/storage'.$cart->product_img)}}" >
                                     @else
                                         <img height='80px' src='{{asset('/B0eS.gif')}}' >
                                     @endif

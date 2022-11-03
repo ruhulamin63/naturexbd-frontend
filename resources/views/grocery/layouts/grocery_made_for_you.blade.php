@@ -15,16 +15,21 @@
                       <div class="member-plan position-absolute"><!--<span class="badge m-3 badge-danger">10%</span>--></div>
                       <div class="p-3" style="height:100%;">
                          <div style="height:80%;">
-                            @if($feature_product->product_thumbnail)
+                            {{-- @if($feature_product->product_thumbnail)
                             <?php if (file_exists("http://127.0.0.1:8000/storage".$feature_product->product_thumbnail)){ ?>
                                <img style=" object-fit: contain;" src="{{asset('http://127.0.0.1:8000/storage'.$feature_product->product_thumbnail)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                             <?php } else{ ?>
                                <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                             <?php } ?>
-{{--                                 <img style=" object-fit: contain;" src="{{'../manager-naturexbd/public'.$feature_product->product_thumbnail}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">--}}
                             @else
                                <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                            @endif
+                            @endif --}}
+
+                            @if($feature_product->product_thumbnail)
+                              <img style="object-fit: contain;" src="{{ asset('http://127.0.0.1:8000/storage'.$feature_product->product_thumbnail) }}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="...">
+                           @else
+                              <img style="object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
+                           @endif
                             <h6>{{$feature_product->product_name}}</h6>
                          </div>
                          <h6>&nbsp</h6>

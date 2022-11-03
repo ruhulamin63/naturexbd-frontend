@@ -10,11 +10,7 @@
                   <div class="p-3" style="height:100%;">
                      <div style="height:80%;">
                         @if($made_product->product_thumbnail)
-                        <?php if (file_exists("../../naturexbd-manage/public".$made_product->product_thumbnail)){ ?>
-                           <img style=" object-fit: contain;" src="{{asset('https://manage.naturexbd.com'.$made_product->product_thumbnail)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                        <?php } else{ ?>
-                           <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                        <?php } ?>
+                           <img style=" object-fit: contain;" src="{{asset('http://127.0.0.1:8000/storage'.$made_product->product_thumbnail)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                         @else
                            <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                         @endif
