@@ -31,7 +31,7 @@
                                         </div>
                                         <div class="vtimeline-block">
                                             <span class="vtimeline-date">{{ date('jS M Y', strtotime($blog->updated_at)) }}</span><div class="vtimeline-content">
-                                                <a href="#"><img src="{{asset('http://127.0.0.1:9000/storage'.$blog->image_path)}}" alt="" class="img-fluid mb20"></a>
+                                                <a href="#"><img src="{{asset('http://127.0.0.1:8000/storage'.$blog->image_path)}}" alt="" class="img-fluid mb20"></a>
                                                 <a href="#"><h3>{{ $blog->title }}</h3></a>
                                                 <ul class="post-meta list-inline">
                                                     <li class="list-inline-item">
@@ -59,7 +59,7 @@
                                         <div class="vtimeline-block">
                                             <span class="vtimeline-date">{{ date('jS M Y', strtotime($blog->updated_at)) }}</span><div class="vtimeline-content">
                                                 <div class="embed-responsive embed-responsive-21by9 mb20">
-                                                    <iframe src="{{asset('http://127.0.0.1:9000/storage/'.$blog->video_path)}}" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                                                    <iframe src="{{asset('http://127.0.0.1:8000/storage/'.$blog->video_path)}}" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
                                                 </div>
                                                 <a href="#"><h3>{{ $blog->title }}</h3></a>
                                                 <ul class="post-meta list-inline">

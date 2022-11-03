@@ -80,7 +80,11 @@ class HomeController extends Controller
 
 
         //$promo_all=DB::table('grocery_promo')->where('start','<=',Carbon::today())->where('end','>',Carbon::today())->where('status',1)->where('activeSatus',1);
-        $feature_products=DB::table('grocery_products')->where('cityID',$cityID)->where('product_type',2)->where('status',"Active")->orderBy('id','DESC')->paginate(16);
+
+        // code write ruhul amin
+        // $feature_products=DB::table('grocery_products')->where('cityID',$cityID)->where('product_type',2)->where('status',"Active")->orderBy('id','DESC')->paginate(16);
+        $feature_products=DB::table('grocery_products')->where('cityID',1)->where('product_type',2)->where('status',"Active")->orderBy('id','DESC')->paginate(16);
+
         //$made_products=DB::table('grocery_products')->where('cityID',$cityID)->where('status',"Active")->inRandomOrder()->limit(32)->get();
         $recommended_category=DB::table('grocery_category')->where('cityID',$cityID)->where('status',"Active")->inRandomOrder()->limit(3);
         $countCat = $recommended_category->count();

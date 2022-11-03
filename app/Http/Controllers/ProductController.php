@@ -32,13 +32,16 @@ class ProductController extends Controller
 
         $title="Product Details -Naturex";
         $product_id = base64_decode($id);
-        $product_info=DB::table('grocery_products')->where('cityID',$cityID)->where('id',$product_id)->where('status',"Active")->first();
+        $product_info=DB::table('grocery_products')->where('cityID',1)->where('id',$product_id)->where('status',"Active")->first();
+        $product_multi_image=DB::table('grocery_products_image_file')->where('product_id',$product_id)->where('status',"Active")->get();
+        // dd($product_multi_image);
+
         $made_products=DB::table('grocery_products')->where('cityID',$cityID)->where('status',"Active")->where(function($q) {$q->where('product_type',1)->orwhere('product_type',2);})->inRandomOrder()->limit(8)->get();
         $category_all=DB::table('grocery_category')->where('cityID',$cityID)->where('status',"Active")->get();
 
         // toastr()->success('Data has been saved successfully!');
         //Toastr::success('Logged in!', 'Login', ["positionClass" => "toast-top-right"]);
-        return view('grocery.product.product_details',compact('title','product_info','made_products','category_all','cur_location'));
+        return view('grocery.product.product_details',compact('title','product_info', 'product_multi_image', 'made_products','category_all','cur_location'));
 
     }
 
