@@ -23,31 +23,24 @@
                      <div class="list-card-image" style="height:100%;">
                         <div class="member-plan position-absolute"></div>
                         <div class="p-3 row">
-                           <div class="col-md-8">
+                           {{-- <div class="col-md-8">
                               @if($product->offer_image)
-                                 <?php if (file_exists("../../naturexbd-manage/public".$product->offer_image)){ ?>
-                                    <img style=" object-fit: contain;" src="{{asset('https://manage.naturexbd.com'.$product->offer_image)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                 <?php } else{ ?>
-                                    <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                 <?php } ?>
+                              {{$product->offer_image}}
+                                 <img style=" object-fit: contain;" src="{{asset('http://127.0.0.1:8000/storage'.$product->offer_image)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                               @else
                                  <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
                               @endif
-                           </div>
+                           </div> --}}
                            <div class="col-md-4">
                               <div >
                                  @if($product->product_thumbnail)
-                                    <?php if (file_exists("../../naturexbd-manage/public".$product->product_thumbnail)){ ?>
-                                       <img style="height: 150px;object-fit: contain;" src="{{asset('https://manage.naturexbd.com'.$product->product_thumbnail)}}" class="img-fluid item-img w-100 mb-3" alt="">
-                                    <?php } else{ ?>
-                                       <img style="height: 150px;object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid item-img w-100 mb-3" alt="">
-                                    <?php } ?>
+                                    <img style="height: 150px;object-fit: contain;" src="{{asset('http://127.0.0.1:8000/storage'.$product->product_thumbnail)}}" class="img-fluid item-img w-100 mb-3" alt="">
                                  @else
                                     <img style="height: 150px;object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid item-img w-100 mb-3" alt="">
                                  @endif
                                  <!-- <p style="font-size: 12px">Godrej Protekt Skin Wipes (Buy 1 Get 1 Free)</p> -->
                                  <h6 style="font-size: 14px; text-align: center">{{$product->product_name}}</h6>
-                                 <p style="font-size: 12px; text-align: justify">{{$product->product_description}}</p>
+                                 <p style="font-size: 12px; text-align: justify">{!! $product->product_description !!}</p>
                                  <p style="font-size: 14px; text-align: center"><del>{{$product->offer_old_price}} TK</del><b>  {{$product->product_price}} TK</b></p>
                               </div>
                               <div style="text-align: center">
