@@ -429,9 +429,10 @@
                    </li>
 {{--                   end writing by ruhul--}}
 
-                  <!--<li class="nav-item active">-->
-                  <!--   <a class="nav-link text-white pl-0" href="{{URL::to('/offer_Product')}}">Offer </a>-->
-                  <!--</li>-->
+                  <li class="nav-item active">
+                    <a class="nav-link text-white pl-0" href="{{URL::to('/offer_Product')}}">Offer </a>
+                  </li>
+
                    @if(session()->has('client_id'))
                       <li class="nav-item active">
                          <a class="nav-link text-white pl-0" href="{{URL::to('/MyOrder')}}">My Order </a>
