@@ -1,6 +1,6 @@
 <!-- Pick's Today -->
 <div class="title d-flex align-items-center py-3">
-   <h5 class="m-0">Made For You</h5>
+   <h5 class="m-0">Feature Products</h5>
    <a class="ml-auto btn btn-outline-success btn-sm" href="{{ URL::to('/seeAllProduct')}}">See all</a>
 </div>
 <!-- pick today -->

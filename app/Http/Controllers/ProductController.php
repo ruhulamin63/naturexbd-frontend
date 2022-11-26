@@ -75,6 +75,19 @@ class ProductController extends Controller
 
     }
 
+
+    //view category wise product
+    public function product_category_view(Request $request,$category,$custom_url)
+    {
+        // $category_all=DB::table('grocery_category')->where('cityID',1)->where('status',"Active")->get();
+        $products=DB::table('grocery_products')->where('cityID',1)->where('category',$category)->where(function($q) {$q->where('product_type',1)->orwhere('product_type',2);})->where('status',"Active")->orderBy('id','desc')->paginate(40);
+        $title="Product by Category -Naturex";
+
+        $custom_url = Products::where('url', $custom_url)->where('category', $category)->first();
+
+        return view('grocery.product.custom_product',compact('custom_url', 'title','products'));
+    }
+
     public function grocery_add_to_cart(Request $request)
     {
         $ip = $this->getIp();

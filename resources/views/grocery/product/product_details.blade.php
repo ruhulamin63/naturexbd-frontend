@@ -62,7 +62,7 @@
                      <div class="pt-0">
                         <h2 class="font-weight-bold" style="font-size:20px;line-height: inherit;">{{ $product_info->product_name }}</h2>
                         <h6 class="font-weight-light text-dark m-0 d-flex align-items-center">
-                           <b class="h6 text-dark m-0 pb-1">QTY: {{ $product_info->measuring_unit_new }}</b>
+                           <b class="h6 text-dark m-0 pb-1">QTY: {{ $product_info->measuring_unit_new }} gm</b>
                            <!--<span class="badge badge-danger ml-2">50% OFF</span>-->
                         </h6>
                         <h6 class="font-weight-light text-dark m-0 d-flex align-items-center">

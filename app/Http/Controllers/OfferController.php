@@ -32,12 +32,14 @@ class OfferController extends Controller
             $cityID=1;
         }
 
+        $offers = DB::table('offers')->where('status','Active')->get();
+
         $offer_products=DB::table('grocery_products')->where('cityID',1)->where('status','Active')->where('product_type',3)->paginate(5);
         $category_all=DB::table('grocery_category')->where('cityID',$cityID)->where('status',"Active")->get();
 
         // toastr()->success('Data has been saved successfully!');
         //Toastr::success('Logged in!', 'Login', ["positionClass" => "toast-top-right"]);
-        return view('grocery.offer.offer_page',compact('title','offer_products','category_all','cur_location'));
+        return view('grocery.offer.offer_page',compact('title','offer_products','category_all','cur_location', 'offers'));
 
     }
 

@@ -50,6 +50,9 @@ Route::get('/grocery_product_details/{id}','ProductController@grocery_product_de
 
 Route::get('/grocery_product_category/{category}','ProductController@grocery_product_category');
 
+//custom url product
+Route::get('/product/{category}/{custom_url}',[ProductController::class, 'product_category_view']);
+
 //start writing by Ruhul
 Route::get('/blog',[BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/show/{id}',[BlogController::class, 'show'])->name('blog.show');

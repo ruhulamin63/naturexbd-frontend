@@ -15,14 +15,7 @@
             <div class="row">
                <div class="col-lg-12">
                   <div class="osahan-listing">
-                      @include('grocery/layouts/grocery_categories')
-                     <div class="d-flex align-items-center mb-3">
-                        <h4>{{isset($products[0])?$products[0]->category:''}}</h4>
-                        <div class="m-0 text-center ml-auto">
-                           <!-- <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn text-muted bg-white mr-2"><i class="icofont-filter mr-1"></i> Filter</a>
-                           <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn text-muted bg-white"><i class="icofont-signal mr-1"></i> Sort</a> -->
-                        </div>
-                     </div>
+
                      <div id="test" class="pick_today">
                         <div class="row">
                            <?php $i=0;?>
@@ -34,16 +27,7 @@
                                           <div class="member-plan position-absolute"><!--<span class="badge m-3 badge-danger">10%</span>--></div>
                                           <div class="p-3" style="height:100%;">
                                              <div style="height:80%;">
-                                                {{-- @if($product->product_thumbnail)
-                                                <?php if (file_exists("http://127.0.0.1:8000/storage".$product->product_thumbnail)){ ?>
-                                                   <img style=" object-fit: contain;" src="{{asset('http://127.0.0.1:8000/storage'.$product->product_thumbnail)}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                                <?php } else{ ?>
-                                                   <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                                <?php } ?>
-                                                @else
-                                                   <img style=" object-fit: contain;" src="{{asset('/B0eS.gif')}}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="">
-                                                @endif --}}
-
+                                        
                                                 @if($product->product_thumbnail)
                                                    <img style="object-fit: contain;" src="{{ asset('http://127.0.0.1:8000/storage'.$product->product_thumbnail) }}" class="img-fluid product_custom_image item-img w-100 mb-3" alt="...">
                                                 @else

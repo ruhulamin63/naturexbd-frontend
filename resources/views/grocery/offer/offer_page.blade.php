@@ -14,6 +14,15 @@
 
    <section class="py-4 osahan-main-body">
       <div class="container">
+
+      <section class="header">
+         @foreach($offers as $offer)
+            <h1>{{ $offer->offer_name }}</h1>
+            <p>{!! $offer->description !!}</p>
+            <a href="#" class="btn-bgstroke">Go</a>
+         @endforeach
+      </section>
+
          <h5 class="mt-3 mb-3">Offer Product</h5>
          <div class="row">
          @if(count($offer_products)>0)

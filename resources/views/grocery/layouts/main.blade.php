@@ -6,6 +6,11 @@
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <meta name="author" content="">
 
+
+    {{-- <meta name="description" content="@yield('meta_description')">
+    <meta name="keywords" content="@yield('meta_keywords')">
+    <meta name="author" content="Rafat Hossain"> --}}
+
       <!-- HTML Meta Tags -->
     <meta name="title" content="NatureX">
     <meta name="description" content="We aim to deliver fresh and organic products from nature to the people of the country. NatureX has started its journey as a sister concern of Khaidai Today Ltd.">
@@ -57,6 +62,57 @@
        <script>
            var jq351 = jQuery.noConflict();
        </script>
+
+
+       {{-- offer page banner css --}}
+       <style>
+            @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+            h1,
+            p,
+            a{
+                margin: 0;
+                padding: 0;
+                font-family: 'Lato';
+            }
+
+            h1 {
+                font-size: 2.8em;
+                padding: 10px 0;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 1.1em;
+                font-weight: 100;
+                letter-spacing: 5px;
+            }
+
+            .header {
+                width: 100%;
+                padding:60px 0;
+                text-align: center;
+                background: #33cccc;
+                color: white;
+            }
+
+
+            .btn-bgstroke {
+                font-size: 20px;
+                display: inline-block;
+                border: 1px solid white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-weight: 300;
+                margin-top: 30px; 
+            }
+
+            .btn-bgstroke:hover {
+                background-color: blue;
+                color: #33cccc;
+            }
+       </style>
+
        <!-- Font Awesome CSS -->
       <link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v5.12.0/css/all.css' type='text/css' media='all' integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
       <link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css' type='text/css' media='all' integrity="sha384-AL44/7DEVqkvY9j8IjGLGZgFmHAjuHa+2RIWKxDliMNIfSs9g14/BRpYwHrWQgz6" crossorigin="anonymous" />
@@ -433,6 +489,20 @@
                     <a class="nav-link text-white pl-0" href="{{URL::to('/offer_Product')}}">Offer </a>
                   </li>
 
+                  {{-- <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Collection/Product
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       @foreach($category_all as $category)
+                          <a class="dropdown-item" href="{{ URL::to('/product/'.$category->category.'/'.$custom_url) }}">
+                          {{$category->category}}
+                          </a>
+                       @endforeach
+                    </div>
+                 </li> --}}
+
+        
                    @if(session()->has('client_id'))
                       <li class="nav-item active">
                          <a class="nav-link text-white pl-0" href="{{URL::to('/MyOrder')}}">My Order </a>
